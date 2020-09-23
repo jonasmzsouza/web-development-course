@@ -1,0 +1,23 @@
+/*
+Floating Elements
+*/
+
+#main {
+    background: green;
+    border: 5px solid red;
+
+}
+
+.content {
+    background: blue;
+    border: 1px solid gray;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: right;
+}
+
+.clear {
+    clear: both;
+}

@@ -1,0 +1,41 @@
+/*
+Floating Elements in Practice
+*/
+
+body {
+    background: gold;
+}
+
+#main {
+    width: 950px;
+    left: auto;
+}
+
+.news {
+    background: #e5e5e5;
+    border: 1px solid gray;
+    padding: 20px;
+    width: 250px;
+    margin: 12px;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.images {
+    background: #e5e5e5;
+    border: 1px solid gray;
+    width: 290px;
+    margin: 12px;
+    float: left;
+}
+
+.images img {
+    margin: 12px;
+}
+
+.images p {
+    padding: 0 20px;
+}

@@ -1,0 +1,33 @@
+.content1 {
+    border: 1px solid red;
+    background: orange;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+    /* 
+    According to the normal flow the content2 appears in front of the content1.
+    The z-index defines which element appears first. The higher the value, the more forward it will appear */
+}
+
+.content2 {
+    border: 1px solid red;
+    background: green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 1;
+}
+
+.content3 {
+    border: 1px solid red;
+    background: yellow;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 160px;
+    left: 160px;
+    z-index: 0;
+}

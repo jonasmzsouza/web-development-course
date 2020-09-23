@@ -1,0 +1,21 @@
+/*
+Box Model
+*/
+
+.content {
+    border: 1px solid red;
+    padding: 20px;
+    width: 150px;
+    margin: 10px;
+}
+
+#news {
+    background: #f9f9f9;
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 10px;
+}
+
+h2 {
+    margin: 0px;
+}

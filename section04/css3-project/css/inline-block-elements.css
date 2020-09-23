@@ -1,0 +1,8 @@
+/*
+Inline, Block and Inline-Block Elements
+*/
+
+.border {
+	border: 1px solid red;
+	display: inline-block;
+}
