@@ -1,0 +1,26 @@
+/* Inheritance and Specificity */
+
+body {
+    color: red;
+    border: 1px solid blue;
+}
+
+#page p {
+    color: red !important;
+}
+
+#page p {
+    color: blue;
+}
+
+h2 {
+    color: blue;
+}
+
+h2#yellow {
+    color: yellow;
+}
+
+h2.green {
+    color: green;
+}
