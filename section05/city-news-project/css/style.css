@@ -1,0 +1,244 @@
+/* Site Structure */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #fff url(../images/background.png) repeat-x;
+}
+
+
+#container {
+	width: 750px;
+	margin: 0 auto;
+}
+
+#top {
+	height: 150px;
+	background: url(../images/top-detail.png) no-repeat right top;
+	padding-top: 25px;
+}
+
+
+.logo {
+	width: 152px;
+	height: 66px;
+	background: url(../images/logo.png) no-repeat center;
+	text-indent: -3000px;
+}
+
+/* Navigation Bar*/
+a:link,
+a:visited {
+	color: #b10333;
+	padding: 2px;
+}
+
+a:hover {
+	color: #e50040;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+
+#top ul {
+	background: #b10333;
+	margin-top: 30px;
+	float: left;
+}
+
+
+#top ul li {
+	float: left;
+}
+
+#top ul a {
+	font-size: 0.9em;
+	display: block;
+	padding: 0.5em 1.5em;
+	line-height: 2.1em;
+	text-decoration: none;
+	color: #fff;
+	background: url(../images/divider.png) no-repeat left center;
+}
+
+#top ul .first a {
+	background: none;
+}
+
+#top ul a:hover {
+	color: #69001d;
+}
+
+body.home #navigation a#home,
+body.brazil #navigation a#brazil,
+body.international #navigation a#international,
+body.photos #navigation a#pothos {
+	color: #fff;
+	background: #de003e;
+	cursor: text;
+}
+
+
+/* Three column layout */
+#content {
+	margin-top: 60px;
+	background: #f5f5f5;
+}
+
+#side {
+	width: 180px;
+	float: left;
+	margin: 0 0 20px -750px;
+}
+
+#primary {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 195px;
+}
+
+#two-columns #primary {
+	width: 555px;
+}
+
+#one-column #primary {
+	width: 750px;
+	margin: 0 0 20px 0px;
+}
+
+#secondary {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 15px;
+}
+
+/* Box */
+.box {
+	margin: 10px 0;
+	padding: 5px;
+	background: #f3f3f3 url(../images/fundo-caixa.png)
+}
+
+h2 {
+	font-size: 1em;
+	background: #294c71;
+	color: #fff;
+	padding: 5px;
+}
+
+.box-content {
+	background: #fff;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+/* Side Menu */
+#side ul a {
+	font-size: 0.9em;
+	padding: 3px;
+	display: block;
+	line-height: 30px;
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #f3f3f3;
+}
+
+#side ul a:hover {
+	background: #f9f9f9 url(../images/marker.png) no-repeat left center;
+	padding-left: 20px;
+	color: #a1a1a1;
+}
+
+/* Forms */
+label {
+	display: block;
+	cursor: pointer;
+}
+
+input {
+	width: 125px;
+	padding: 5px;
+	font-size: 0.9em;
+	background-color: #fff;
+}
+
+input.submit {
+	width: 80px;
+	color: #fff;
+	background-color: #b10333;
+	border: 2px solid #870529;
+}
+
+/* Formatting images */
+img.main-image {
+	width: 98%;
+	border: 3px solid #dfdfdf;
+}
+
+/* Formatting header */
+h3 {
+	text-transform: uppercase;
+	display: inline;
+	font-size: 0.8em;
+	padding: 3px;
+}
+
+.highlight h3 {
+	background: #b10333;
+	color: #fff;
+}
+
+.interview h3 {
+	background: #de000e;
+}
+
+/* Formatting news list */
+#news-list li {
+	padding: 2px;
+	border-bottom: 1px solid #ccc;
+	height: 62px;
+}
+
+#news-list li a img {
+	float: left;
+	margin: 5px;
+}
+
+#news-list li a {
+	text-decoration: none;
+}
+
+#news-list li a h3 {
+	font-size: 0.8em;
+	padding: 0;
+	color: #3e7ab9;
+}
+
+#news-list li a p {
+	font-size: 0.7em;
+	color: #000;
+}
+
+#news-list li:hover {
+	background: #eee;
+	cursor: pointer;
+}
+
+/* Footer */
+#footer-container {
+	background: #294c71;
+	padding: 20px;
+}
+
+#footer {
+	width: 750px;
+	margin: 0 auto;
+	color: #fff;
+}
