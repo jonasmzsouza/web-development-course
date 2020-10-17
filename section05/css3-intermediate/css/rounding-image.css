@@ -1,0 +1,22 @@
+/* Rounding with Image */
+
+.box {
+    width: 400px;
+    background: #dedede url(../images/roundig-background.png) repeat-y;
+}
+
+.box h2 {
+    padding: 10px 20px 0 20px;
+    background: #dedede url(../images/top2.png) no-repeat left top;
+}
+
+.box p {
+    padding: 0 20px;
+    margin-bottom: 0;
+}
+
+.box .last {
+    background: #dedede url(../images/bottom2.png) no-repeat left bottom;
+    width: 100%;
+    height: 24px;
+}
