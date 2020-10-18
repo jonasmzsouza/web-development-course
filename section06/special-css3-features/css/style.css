@@ -1,0 +1,173 @@
+/* Border Radius and Box Sizing
+---------------------------- */
+#box {
+	width: 300px;
+	height: 300px;
+	background: #b9c941;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 20px 90px;
+}
+
+.round-image {
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	-o-border-radius: 150px;
+	border-radius: 150px;
+}
+
+
+#box2 {
+	width: 300px;
+	height: 300px;
+	background: #b9c941;
+	padding: 50px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Gradient and Transparency
+---------------------------- */
+
+#gradient {
+	width: 300px;
+	height: 300px;
+	/* background: linear-gradient(120deg, red, blue, green, yellow) */
+	background: -webkit-radial-gradient(red, blue, green);
+	background: -moz-radial-gradient(red, blue, green);
+	background: -o-radial-gradient(red, blue, green);
+	background: radial-gradient(red, blue, green)
+}
+
+
+#transparency {
+	width: 300px;
+	height: 300px;
+	background: url("../images/camera.png")
+}
+
+#transparency h1 {
+	background: rgba(255, 255, 255, 0.7);
+}
+
+/* Shadow
+---------------------------- */
+#shadow {
+	width: 300px;
+	height: 300px;
+	padding: 8px;
+	margin: 20px;
+	background: #009670;
+	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+#shadow h1 {
+	color: white;
+	/*text-shadow: 2px 2px black;*/
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Animation
+---------------------------- */
+@-webkit-keyframes anime-animation {
+	from {
+		background: red;
+		border-radius: 0px;
+		top: 0;
+		left: 0;
+	}
+
+	to {
+		background: green;
+		border-radius: 300px;
+		top: 200px;
+		left: 200px;
+	}
+}
+
+@-moz-keyframes anime-animation {
+	from {
+		background: red;
+		border-radius: 0px;
+		top: 0;
+		left: 0;
+	}
+
+	to {
+		background: green;
+		border-radius: 300px;
+		top: 200px;
+		left: 200px;
+	}
+}
+
+@-o-keyframes anime-animation {
+	from {
+		background: red;
+		border-radius: 0px;
+		top: 0;
+		left: 0;
+	}
+
+	to {
+		background: green;
+		border-radius: 300px;
+		top: 200px;
+		left: 200px;
+	}
+}
+
+@keyframes anime-animation {
+	from {
+		background: red;
+		border-radius: 0px;
+		top: 0;
+		left: 0;
+	}
+
+	to {
+		background: green;
+		border-radius: 300px;
+		top: 200px;
+		left: 200px;
+	}
+}
+
+#animation {
+	width: 300px;
+	height: 300px;
+	background: red;
+	position: relative;
+	/* animation-name: anime-animation;
+	animation-duration: 5s;
+	animation-delay: 3s;
+	animation-iteration-count: 2;
+	animation-direction: alternate; */
+	-webkit-animation: anime-animation 5s 3s 2 alternate;
+	-moz-animation: anime-animation 5s 3s 2 alternate;
+	-o-animation: anime-animation 5s 3s 2 alternate;
+	animation: anime-animation 5s 3s 2 alternate;
+}
+
+
+/* Transition
+---------------------------- */
+#transition {
+	width: 300px;
+	height: 300px;
+	background: orange;
+}
+
+#transition:hover {
+	width: 500px;
+	background: yellow;
+	-webkit-transition: width 3s, background 3s;
+	-moz-transition: width 3s, background 3s;
+	-o-transition: width 3s, background 3s;
+	transition: width 3s, background 3s;
+	/* transition: all 3s; */
+}
