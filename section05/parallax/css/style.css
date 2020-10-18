@@ -1,0 +1,84 @@
+/* Standard formatting
+---------------------------- */
+body,
+html {
+    margin: 0;
+    font: 16px "Lato", sans-serif;
+    color: #777;
+    height: 100%;
+}
+
+.content {
+    color: #777;
+    background-color: white;
+    text-align: justify;
+    padding: 50px 80px;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #111;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Parallax effects
+---------------------------- */
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    position: relative;
+    height: 100%;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.box1 {
+    background-image: url(../images/image1.jpg);
+}
+
+.box2 {
+    background-image: url(../images/image2.jpg);
+}
+
+.box3 {
+    background-image: url(../images/image3.jpg);
+}
+
+.box4 {
+    background-image: url(../images/image4.jpg);
+}
+
+.box5 {
+    background-image: url(../images/image5.jpg);
+}
+
+.box6 {
+    background-image: url(../images/image6.jpg);
+}
+
+.title-content {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 45%;
+    text-align: center;
+}
+
+.title-content span.title {
+    color: #fff;
+    background-color: #111;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
