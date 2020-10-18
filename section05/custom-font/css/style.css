@@ -1,0 +1,33 @@
+/* External fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Sansita+Swashed&display=swap');
+
+body {
+    font-size: 2em;
+}
+
+.sansita {
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.chilanka {
+    font-family: 'Chilanka', cursive;
+}
+
+/* Fonts in directory */
+@font-face {
+    font-family: "Road Roge";
+    src: url("../fonts/RoadRage.woff");
+}
+
+@font-face {
+    font-family: Heart;
+    src: url("../fonts/BringHeart.woff");
+}
+
+.road-rage {
+    font-family: "Road Roge";
+}
+
+.heart {
+    font-family: "Heart";
+}
