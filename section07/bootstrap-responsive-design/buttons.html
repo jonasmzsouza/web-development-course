@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<title>Bootstrap - Buttons</title>
+</head>
+
+<body style="padding-bottom: 200px; width: 600px; margin: 0 auto;">
+
+	<!-- Buttons 
+    standard formatting: btn
+    specific formatting:
+    btn-primary, btn-secondary, btn-success, btn-info,
+    btn-warning, btn-danger, btn-light, btn-dark, btn-link
+    -->
+	<h3>Buttons</h3>
+	<button class="btn btn-success" type="button">Click</button>
+
+	<h3>Buttons with different tags</h3>
+	<a class="btn btn-info" href="#">Link</a>
+	<button class="btn btn-info" type="submit">Submit</button>
+	<input class="btn btn-info" type="button" value="Button">
+	<input class="btn btn-info" type="submit" value="Input Submit">
+	<input class="btn btn-info" type="reset" value="Reset">
+
+	<!-- Contoured buttons
+    btn-outline-<format>
+    -->
+	<h3>Contoured buttons</h3>
+	<button class="btn btn-outline-danger" type="button">Clique</button>
+
+	<!-- Button sizes
+    options: btn-lg, btn-sm, btn-block
+    -->
+	<h3>Button sizes</h3>
+	<button class="btn btn-primary btn-lg" type="button">Large</button>
+	<button class="btn btn-primary btn-sm" type="button">Small</button>
+	<br><br>
+	<button class="btn btn-warning btn-block" type="button">Block</button>
+
+	<!-- Button states
+    options: active, disabled
+    -->
+	<h3>Button states</h3>
+	<button class="btn btn-danger" type="button">Normal</button>
+	<button class="btn btn-danger active" type="button">Active</button>
+	<button class="btn btn-danger disabled" type="button">Disabled</button>
+	<br><br>
+	<button class="btn btn-danger " type="button" data-toggle="button">Toggle</button>
+
+	<h3>Button groups - horizontal</h3>
+	<div class="btn-group">
+		<button class="btn btn-info" type="button">Left</button>
+		<button class="btn btn-info" type="button">Center</button>
+		<button class="btn btn-info" type="button">Right</button>
+	</div>
+
+	<h3>Button groups - vertical</h3>
+	<div class="btn-group-vertical">
+		<button class="btn btn-danger" type="button">Top</button>
+		<button class="btn btn-danger" type="button">Middle</button>
+		<button class="btn btn-danger" type="button">Bottom</button>
+	</div>
+
+	<h3>Button toolbar</h3>
+	<div class="btn-toolbar">
+		<div>
+			<button class="btn btn-danger" type="button">1</button>
+			<button class="btn btn-danger" type="button">2</button>
+			<button class="btn btn-danger" type="button">3</button>
+		</div>
+		<div>
+			<button class="btn btn-danger" type="button">4</button>
+			<button class="btn btn-danger" type="button">5</button>
+		</div>
+	</div>
+
+	<h3>Button dropdown</h3>
+	<div class="dropdown">
+		<button class="btn btn-success dropdown-toggle" data-toggle="dropdown" type="button">
+			Click
+		</button>
+		<div class="dropdown-menu">
+			<a href="#" class="dropdown-item">Link 1</a>
+			<div class="dropdown-divider"></div>
+			<a href="#" class="dropdown-item">Link 2</a>
+			<a href="#" class="dropdown-item">Link 3</a>
+		</div>
+	</div>
+
+	<!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+	</script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

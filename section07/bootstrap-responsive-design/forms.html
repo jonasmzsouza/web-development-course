@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<title>Bootstrap - Forms</title>
+</head>
+
+<body style="margin-bottom: 200px;padding: 16px;">
+
+	<!-- Forms 
+        classe: form-control-<opcoes>
+        otions: sm, lg
+    -->
+	<form>
+
+		<!-- caixas de texto -->
+		<div class="form-group">
+			<label for="user">User</label>
+			<input class="form-control" type="text" id="usuario" placeholder="Enter your username">
+		</div>
+
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input class="form-control" type="email" id="email" placeholder="Enter your e-mail" readonly>
+			<small>Email will be validated</small>
+		</div>
+
+		<!-- select -->
+		<div class="form-group">
+			<label for="states">States</label>
+			<select class="form-control" id="states">
+				<option>Acre</option>
+				<option>Alagoas</option>
+				<option>Amapá</option>
+				<option>...</option>
+			</select>
+		</div>
+
+		<!-- textarea -->
+		<div class="form-group">
+			<label for="message">Message</label>
+			<textarea class="form-control" id="message" rows="3"></textarea>
+		</div>
+
+		<!-- file input -->
+		<div class="form-group">
+			<label for="file">File</label>
+			<input class="form-control-file" type="file" id="file" value="Select file">
+		</div>
+
+
+		<!-- custom file input -->
+		<div class="custom-file">
+			<label class="custom-file-label">Select file</label>
+			<input class="custom-file-input" type="file" id="file" value="Select file">
+		</div>
+		<br><br>
+
+		<!-- range -->
+		<div class="form-group">
+			<label id="range">Satisfaction</label>
+			<input class="custom-range" type="range" id="range" min="1" max="5">
+		</div>
+
+		<!-- button -->
+		<input class="btn btn-primary" type="submit" value="Save">
+
+	</form>
+	<br><br>
+
+	<!-- Inline Form -->
+	<form class="form-inline">
+		<input class="form-control mr-2" type="text" placeholder="Enter your username">
+		<input class="form-control mr-2" type="password" placeholder="Enter your password">
+		<input class="btn btn-primary" type="submit" value="Login">
+	</form>
+	<br><br>
+
+	<!-- 
+    Form validation
+    Classes: is-valid, is-invalid, invalid-feedback, valid-feedback
+    -->
+	<form>
+
+		<div class="form-group">
+			<label for="user-email">email</label>
+			<input class="form-control is-valid" type="text" id="email-usuario" placeholder="Enter your e-mail">
+			<div class="valid-feedback">
+				Valid email
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="user-password">Senha</label>
+			<input class="form-control is-invalid" type="email" id="senha-usuario" placeholder="Enter your password">
+			<div class="invalid-feedback">
+				Invalid password
+			</div>
+		</div>
+
+		<input class="btn btn-primary" type="submit" value="Login">
+
+	</form>
+
+	<!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+	</script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

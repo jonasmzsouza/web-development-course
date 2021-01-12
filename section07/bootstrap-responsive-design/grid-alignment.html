@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Bootstrap - Grid Alignment</title>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<h2>Vertical alignment (align-items-ALIGNMENT: start, center, end)</h2>
+		<div class="marker marker2 row align-items-center">
+			<div class="col border">Area 1</div>
+			<div class="col border">Area 2</div>
+			<div class="col border">Area 3</div>
+		</div>
+
+		<h2>Vertical Alignment - Self (align-self-ALIGNMENT: start, center, end)</h2>
+		<div class="marker marker2 row">
+			<div class="col border align-self-start">Area 1</div>
+			<div class="col border align-self-center">Area 2</div>
+			<div class="col border align-self-end">Area 3</div>
+		</div>
+
+		<h2>Horizontal Alignment - Columns (justify-content-ALIGNMENT: start, center, end)</h2>
+		<div class="row justify-content-start">
+			<div class="marker marker2 col-2">Area 1</div>
+			<div class="marker marker2 col-2">Area 2</div>
+			<div class="marker marker2 col-2">Area 3</div>
+		</div>
+
+		<h2>Distribution (justify-content-ALIGNMENT: around, between)</h2>
+		<div class="row border justify-content-around">
+			<div class="marker marker2 col-2">Area 1</div>
+			<div class="marker marker2 col-2">Area 2</div>
+			<div class="marker marker2 col-2">Area 3</div>
+			<div class="marker marker2 col-2">Area 4</div>
+		</div>
+
+		<h2>Removing spacing</h2>
+		<div class="row no-gutters">
+			<div class="border col-2">Area 1</div>
+			<div class="border col-2">Area 2</div>
+			<div class="border col-2">Area 3</div>
+		</div>
+
+	</div>
+
+	<!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+	</script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

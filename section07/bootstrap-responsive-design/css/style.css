@@ -1,0 +1,32 @@
+p {
+	font-size: 20px;
+	color: blue;
+}
+
+.marker {
+	background: #fe9d9d;
+	border: 1px solid #f94646;
+}
+
+.container-marker {
+	background: #5bf946;
+	border: 1px solid #36ae26;
+}
+
+.marker2 {
+	height: 120px;
+}
+
+.border {
+	border: 1px solid blue;
+}
+
+.box {
+	background: #f5f5f5;
+	height: 200px;
+}
+
+.item {
+	border: 1px solid black;
+	padding: 5px;
+}
