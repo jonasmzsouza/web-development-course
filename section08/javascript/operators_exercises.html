@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators - Exercises</title>
+
+    <script>
+        var name = prompt('Enter your name: ');
+        var height = prompt('Enter your height in centimeters: ');
+        var weight = prompt('Enter your weight: ');
+
+        height = parseInt(height);
+        weight = parseFloat(weight);
+
+        height = height / 100;
+
+        bodyMass = weight / (height * height);
+
+        var classification;
+
+        if (bodyMass < 16) {
+            classification = 'Very severe underweight';
+        } else if (bodyMass >= 16 && bodyMass < 16.99) {
+            classification = 'severe underweight';
+        } else if (bodyMass >= 17 && bodyMass < 18.49) {
+            classification = 'Underweight';
+        } else if (bodyMass >= 18.50 && bodyMass < 24.99) {
+            classification = 'Normal weight';
+        } else if (bodyMass >= 25 && bodyMass < 29.99) {
+            classification = 'Over weight';
+        } else if (bodyMass >= 30 && bodyMass < 34.99) {
+            classification = 'Grade I obesity';
+        } else if (bodyMass >= 35 && bodyMass < 39.99) {
+            classification = 'Grade II obesity';
+        } else if (bodyMass >= 40) {
+            classification = 'Grade III obesity';
+        }
+
+        document.write(name + ' has a body mass index equal to ' + bodyMass + ', being assessed as: ' + classification);
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

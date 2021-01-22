@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IfElse - Logical Operators</title>
+
+    <script>
+        var grade = prompt('Enter the grade: ');
+        var average = 7;
+        var max_absence = prompt('Enter the number of absences: ');
+
+        if (grade >= average && max_absence <= 55) {
+            document.write('Approved');
+        } else {
+            document.write('Disapproved');
+        }
+
+        var result = grade >= average && max_absence <= 55 ? 'Approved' : 'Disapproved';
+        document.write(result);
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
