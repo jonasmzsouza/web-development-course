@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function: Date</title>
+    <script>
+        var date = new Date()
+
+        document.write(date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear())
+        document.write('<br>')
+
+        // add/remove day
+        document.write(date.toString())
+        date.setDate(date.getDate() + 1)
+        document.write('<hr>')
+        document.write(date.toString())
+        document.write('<br><br><hr>')
+
+        // add/remove month
+        document.write(date.toString())
+        date.setMonth(date.getMonth() - 1)
+        document.write('<hr>')
+        document.write(date.toString())
+        document.write('<br><br><hr>')
+
+        // add/remove year
+        document.write(date.toString())
+        date.setFullYear(date.getFullYear() - 1)
+        document.write('<hr>')
+        document.write(date.toString())
+
+        var date1 = new Date(2021, 0, 15)
+        var date2 = new Date(2021, 1, 23)
+
+        document.write('<br><br><hr>')
+        document.write(date1.toString())
+        document.write('<hr>')
+        document.write(date2.toString())
+
+        // convert dates to something that we can calculate
+        document.write('<br><br><hr>')
+        document.write(date1.getTime())
+        document.write('<hr>')
+        document.write(date2.getTime())
+
+        // find the amount of milliseconds between date1 and date2
+        document.write('<br><br><hr>')
+        var milliseconds_between_dates = Math.abs(date1.getTime() - date2.getTime())
+        document.write(milliseconds_between_dates)
+
+        document.write('<br><br><hr>')
+        var milliseconds_per_day = (1 * 24 * 60 * 60 * 1000)
+        document.write(milliseconds_per_day)
+
+        // difference of days between dates
+        document.write('<br><br><hr>')
+        document.write(Math.ceil(milliseconds_between_dates / milliseconds_per_day))
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

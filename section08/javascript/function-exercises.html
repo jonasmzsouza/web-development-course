@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function: Exercise</title>
+    <script>
+        function calculate(num1, num2, operation) {
+
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+
+            if (operation == 'addition') {
+                return num1 + num2
+            } else if (operation == 'subtraction') {
+                return num1 - num2
+            } else {
+                document.write('the informed operation is invalid')
+            }
+        }
+
+        var num1 = prompt('Enter a number: ');
+        var operation = prompt('Inform whether the operation is addition or subtraction: ');
+        var num2 = prompt('Enter other number: ');
+        var result = calculate(num1, num2, operation)
+        document.write('The result is: ' + result)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
