@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM: Manipulate Styles</title>
+
+    <script>
+        function changeStyle(color, width, height) {
+            document.getElementById('square').style.background = color
+            document.getElementById('square').style.width = width
+            document.getElementById('square').style.height = height
+        }
+    </script>
+</head>
+
+<body>
+    <h3>Manipular Styles</h3>
+
+    <button type="button" onclick="changeStyle('#FF0000', '150px', '150px')">RED</button>
+    <button type="button" onclick="changeStyle('#00FF00', '200px', '200px')">GREEN</button>
+    <button type="button" onclick="changeStyle('#0000FF', '250px', '250px')">BLUE</button>
+
+    <hr>
+    <div style="border: 1px solid #000; width: 100px; height: 100px" id="square"></div>
+
+
+</body>
+
+</html>

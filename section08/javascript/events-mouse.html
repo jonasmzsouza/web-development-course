@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event: Mouse</title>
+    <script>
+        function action() {
+            alert('The event was triggered')
+        }
+    </script>
+</head>
+
+<body>
+    <div onclick="action()" style="background: #ccc; height: 150px; width: 150px; border: 1px solid red">
+        ONCLICK
+    </div>
+    <div ondblclick="action()" style="background: #ccc; height: 150px; width: 150px; border: 1px solid red">
+        ONDBLCLICK
+    </div>
+    <div onmouseup="action()" style="background: #ccc; height: 150px; width: 150px; border: 1px solid red">
+        ONMOUSEUP
+    </div>
+    <div onmouseover="action()" style="background: #ccc; height: 150px; width: 150px; border: 1px solid red">
+        ONMOUSEOVER
+    </div>
+    <div onmouseout="action()" style="background: #ccc; height: 150px; width: 150px; border: 1px solid red">
+        ONMOUSEOUT
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM: Manipulate Values</title>
+
+    <script>
+        function distributeCharacters() {
+
+            var character = document.getElementById('data_input').value
+            document.getElementById('data_input').value = ''
+
+            character.trim()
+
+            if (character == '0' || character == '1' || character == '2' || character == '3' || character == '4' ||
+                character == '5' || character == '6' || character == '7' || character == '8' || character == '9') {
+                document.getElementById('numbers').value += character
+            } else {
+                document.getElementById('letters').value += character
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" placeholder="Enter a character" id="data_input" onkeyup="distributeCharacters()">
+        <hr>
+        <label for="">Letters:</label>
+        <input type="text" id="letters" disabled>
+        <label for="">Numbers:</label>
+        <input type="text" id="numbers" disabled>
+    </form>
+
+
+</body>
+
+</html>
