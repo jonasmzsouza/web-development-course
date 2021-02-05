@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array: Exercises</title>
+
+    <script>
+        var objects = Array('Chair', 'Printer', 'Fork')
+
+        function checkData() {
+            var data_input = document.getElementById('data_input').value
+
+            data_input.trim()
+
+            if (data_input === '') {
+                alert('Enter a valid value')
+            } else {
+                var auxiliary = objects.indexOf(data_input)
+
+                if (auxiliary != -1) {
+                    alert('The element already included')
+                } else {
+                    objects.push(data_input)
+                    document.getElementById('data_input').value = ''
+                }
+            }
+        }
+
+        function orderData() {
+            objects.sort()
+            console.log(objects)
+        }
+    </script>
+</head>
+
+<body>
+
+    <input id="data_input" type="text" placeholder="Enter an object">
+    <button onclick='checkData()' id="btn_add" type="button">Add</button>
+    <button onclick='orderData()' id="btn_order" type="button">Order</button>
+</body>
+
+</html>
