@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetitive Structures: While</title>
+
+    <script>
+        var x = prompt('Enter a number: ')
+
+        document.write('start <br>')
+        while (x <= 10) {
+
+            x++
+            if (x === 5) {
+                continue
+            }
+
+            document.write(x + '</br>')
+
+            if (x === 7) {
+                break
+            }
+
+        }
+        document.write('end <br>')
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

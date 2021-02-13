@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function - Variable parameters</title>
+    <script>
+        function sum() {
+            var result = 0
+            for (var i in arguments) {
+                result += arguments[i]
+            }
+            return result
+        }
+
+        document.write(sum(10, 15, 7, 5.5, 'Jonas'))
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetitive Structures: Foreach</title>
+
+    <script>
+        var fruits_list = Array()
+
+        fruits_list[0] = 'Banana'
+        fruits_list[1] = 'Apple'
+        fruits_list[2] = 'Strawberry'
+        fruits_list[3] = 'Grape'
+
+        fruits_list.forEach(function (value, index, array) {
+
+            if (value === 'Apple') {
+                array[index] = 'Pineapple'
+            }
+
+            document.write('Index: ' + index + '|| Value: ' + value + '<br>')
+
+        })
+
+        document.write('<hr>')
+        document.write(fruits_list)
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

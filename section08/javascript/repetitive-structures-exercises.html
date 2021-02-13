@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetitive Structures: Exercises</title>
+
+    <script>
+        document.write('Exercise 1 <br>')
+        var fruits_list = Array()
+
+        fruits_list[0] = 'Banana'
+        fruits_list[1] = 'Apple'
+        fruits_list[2] = 'Strawberry'
+        fruits_list[3] = 'Grape'
+
+        for (var x = 1; x < fruits_list.length; x++) {
+            document.write(fruits_list[x] + '<br>')
+        }
+
+        document.write('<hr>')
+        document.write('Exercise 2 <br>')
+
+        var x = 1
+        while (x <= 10) {
+            var y = 1
+            while (y <= 10) {
+                document.write(x + ' x ' + y + ' = ' + (x * y) + '<br>')
+                y++
+            }
+            x++
+            document.write('<hr>')
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
