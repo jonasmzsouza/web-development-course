@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling</title>
+
+    <script>
+        var video = Array()
+
+        video[1] = Array()
+        video[1]['name'] = 'Ex Machina'
+        video[1]['category'] = 'Science Fiction'
+
+        function getVideo(video) {
+
+            try {
+                //logic
+                //http                
+                console.log(video[0]['name'])
+            } catch (e) {
+                treatError(e)
+                console.log('We can treat the error here')
+                throw new Error("There was an error, but don't worry, we're working on it now")
+            } finally {
+                console.log('always passes through here (try / catch)')
+            }
+
+        }
+
+        function treatError(e) {
+            //we can have a logic here to register the error on the server
+            console.log(e)
+        }
+
+        getVideo(video)
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

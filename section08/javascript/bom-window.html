@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM: Window</title>
+    <script>
+        var new_window
+
+        function openPopUp() {
+            new_window = window.open('http://www.google.com', 'new_window', 'width=500, heigth=500')
+        }
+
+        function closePopUp() {
+            new_window.close()
+        }
+
+        function printPage() {
+            window.print()
+        }
+    </script>
+</head>
+
+<body>
+    <button type="button" onclick="openPopUp()">Open Window</button>
+    <button type="button" onclick="closePopUp()">Close Window</button>
+    <button type="button" onclick="printPage()">Print Page</button>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM: Screen</title>
+    <script>
+        var width = window.screen.availWidth
+        var height = window.screen.availHeight
+
+        document.write('Browser height: ' + height + '<br>')
+        document.write('Browser width: ' + width + '<br>')
+
+        if (width < 500) {
+            document.write('Menu printing logic for mobile version')
+        } else {
+            document.write('Menu printing logic for web version')
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
