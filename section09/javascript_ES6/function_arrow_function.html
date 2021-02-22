@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - ECMAScript 2015 (ES6)</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+        //   let square = function(x = 5){
+    //       return x * x
+    //   }
+
+    //   let square = (x) => {
+    //       return x * x
+    //   }
+
+    //   let square = x => x * x //implicit return
+
+    //   document.write(square(3))
+
+    // let pairOr = function (number) {
+    //     if(number % 2 === 0){
+    //         return 'pair'
+    //     } else {
+    //         return 'odd'
+    //     }
+    // }
+
+    // let pairOuOdd =  number => {
+    //     if(number % 2 === 0){
+    //         return 'pair'
+    //     } else {
+    //         return 'odd'
+    //     }
+    // }
+
+    let pairOuOdd =  number =>  number % 2 === 0 ? 'pair' : 'odd' //implicit return
+    document.write(pairOuOdd(prompt('Enter a number:')))
+    
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>

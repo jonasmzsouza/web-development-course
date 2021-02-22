@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - ECMAScript 2015 (ES6)</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Your custom script here -->
+    <script type="text/babel">
+        //3 scope: global, function and block
+
+        //var serie = "Friends"
+        // function x(){
+
+        //     var serie = "Game Of Thrones"
+        //     console.log('function: ' + serie)
+        //     if(true){
+        //         console.log('block within function: '+serie)
+        //     }
+        // }
+
+        // x()
+
+        // if(true){
+        //     console.log('global: '+ serie)
+        // }
+        //----------------------------------
+        // function x() {
+
+        //     console.log('within the function: ' + serie)
+
+        //     if (true) {
+        //         //var serie = 'The Walking Dead'
+
+        //     }
+        // }
+
+        // x()
+        // if (true) {
+        //     var serie = 'The Walking Dead'
+        //   //  x()
+        //     console.log(serie)
+        // }
+
+        // console.log(serie)
+        //----------------------------------
+
+        if(true){
+            let serie = "Friends";
+            console.log(serie)
+        }
+        console.log(serie)        
+
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>

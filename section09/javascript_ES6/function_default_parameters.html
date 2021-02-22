@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - ECMAScript 2015 (ES6)</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+        function contarUmaHistoria(character = 'Milo', activity = 'Correr', owner = 'Paul'){
+           document.write(`Once upon a time there was a dog named ${character}, who liked to ${activity}, its owner was ${owner} and they lived happily ever after.`)
+       }
+
+       contarUmaHistoria(undefined, 'chase the ball', 'John')
+
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>
