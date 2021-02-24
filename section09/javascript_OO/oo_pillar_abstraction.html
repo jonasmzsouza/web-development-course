@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Object Orientation</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+        //object model
+        class BankAccount {
+
+            constructor() {
+                this.agency = 8888
+                this.accountNumber = 111111
+                this.balance = 200
+                this.limit = 600
+            }
+
+            deposit(depositAmount) {
+                this.balance += depositAmount
+            }
+
+            withdraw(withdrawalAmount) {
+                this.balance -= withdrawalAmount
+            }
+
+            checkBalance() {
+                return this.balance
+            }
+        }
+
+        let x = new BankAccount()
+        let y = new BankAccount()
+
+        console.log(`Account X: ${x.checkBalance()}`)
+        x.deposit(300)
+        console.log(`Account X: ${x.checkBalance()}`)
+        x.withdraw(200)
+        console.log(`Account X: ${x.checkBalance()}`)
+
+        console.log(`Account Y: ${y.checkBalance()}`)
+
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>

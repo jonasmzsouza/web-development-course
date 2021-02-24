@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Object Orientation</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+        //chair
+
+        //procedural paradigm
+
+        //chair
+        // let qtt_legs = 4
+        // let isSwivel = false
+        // let color = 'blue'
+        //array de chairs
+       /*  let chairs = Array()
+        chairs[0] = Array()
+        chairs[0]['qtt_legs'] = 4
+        chairs[0]['isSwivel'] = false
+        chairs[0]['color'] = 'blue'
+
+        chairs[1] = Array()
+        chairs[1]['qtt_legs'] = 1
+        chairs[1]['isSwivel'] = true
+        chairs[1]['color'] = 'red'
+
+        function rotateChair(index) {
+            if (chairs[index]['isSwivel'] === true) {
+                console.log('the chair is swivel')
+            } else {
+                console.log('the chair is not swivel')
+            }
+        }
+
+        function addChair(qtt_legs, isSwivel, color) {
+            chair['qtt_legs'] = qtt_legs
+            chair['isSwivel'] = isSwivel
+            chair['color'] = color
+
+            chairs.push(chair)
+        }
+        addChair(3, false, 'green')
+
+        //rotateChair(1)
+
+        //OO paradigm*/
+
+        class Chair {
+            constructor(qtt_legs, isSwivel, color){
+                this.qtt_legs =  qtt_legs
+                this.isSwivel = isSwivel
+                this.color = color
+            }
+        
+            rotateChair(){
+                if(this.isSwivel === true){
+                    console.log('the chair is swivel')
+                } else {
+                    console.log('the chair is not swivel')
+                }
+            }
+        }
+
+        // let chair = new Chair(4, false, 'azul')
+        // let chair2 = new Chair(1, true, 'vermelha')
+
+       let chairs = Array()
+       chairs.push(new Chair(4, false, 'blue'))
+       chairs.push(new Chair(1, true, 'red'))
+       console.log(chairs)
+       // chair2.rotateChair()
+
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Object Orientation</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+        let person = {
+            name: 'Mary',
+            age: 30
+        }
+
+        console.log(person)
+
+        //---------------------
+
+        person.gender = 'Female'
+        console.log(person)
+
+        person.greeting = () => console.log('Hello, how are you?')
+        person.greeting()
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

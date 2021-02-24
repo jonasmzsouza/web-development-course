@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Object Orientation</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+        // http request
+        // http response
+            let Bike1 = {
+            color: 'Black',
+            march: 'single',
+            rim: 12,
+            pedal() { console.log('Pedaling method performed') }
+        }
+
+        // http request
+        // http response
+        let Bike2 = {
+            color: 'Blue',
+            march: '18',
+            rim: 26,
+            pedal() { console.log('Pedaling method performed') }
+        }
+
+        console.log(Bike1)
+        console.log(Bike2)
+
+
+        //---------------------------------------
+        let BikeFactory = function(color, march, rim) {
+            // logic
+            // http request
+            // http response
+            return {
+                color,
+                march,
+                rim,
+                pedal() { console.log('Pedaling method performed') }
+            }
+        }
+
+        let Bike3 = BikeFactory('Blue', '18', 26)
+        console.log(Bike3)
+
+        let Bike4 = BikeFactory('Black', '21', 29)
+        console.log(Bike4)
+
+        //console.log(`color: ${Bike3.color}`)
+        //Bike3.pedal()
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

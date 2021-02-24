@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Object Orientation</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+        let Car = function (){
+            this.color = 'Green'
+            this.model = 'Camaro'
+            this.currentSpeed = 0
+            this.maxSpeed = 180
+
+            this.speedUp = function () {
+                // this.speedAtual += 10
+                let speed = this.getspeedAutal() + 10
+                this.setspeedAtual(speed)
+
+            }
+            this.getspeedAutal = function(){
+                return this.currentSpeed
+            }
+            this.setspeedAtual = function (currentSpeed){
+                this.currentSpeed = currentSpeed
+            }
+        }
+
+        let car = new Car()
+
+        console.log(`The current speed is ${car.getspeedAutal()}`)
+        car.speedUp()
+        car.speedUp()
+        console.log(`The current speed is ${car.getspeedAutal()}`)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

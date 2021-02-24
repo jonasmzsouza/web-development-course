@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Object Orientation</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+        //object model
+        class Animal {
+            constructor(color, size, weight) {
+            this.color = color
+            this.size = size
+            this.weight = weight
+            }
+
+            sleep() {
+            console.log('sleep')
+            }
+        }
+
+        class Bird extends Animal {
+            constructor(beak, color, size, weight) {
+            super(color, size, weight)
+            this.beak = beak
+            }
+
+            fly() {
+            console.log('fly')
+            }
+
+        }
+
+        class Parrot extends Bird {
+            constructor(canSpeak, beak , color, size, weight) {
+            super(beak, color, size, weight)
+            this.canSpeak = canSpeak
+            }
+
+            speak() {
+            console.log('speak')
+            }
+        }
+
+        let parrot = new Parrot(true, 'medio','green', 25, 400)
+        console.log(parrot)
+
+        let parrot2 = new Parrot(false, 'small', 'red', 10, 150)
+        console.log(parrot2)
+
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>

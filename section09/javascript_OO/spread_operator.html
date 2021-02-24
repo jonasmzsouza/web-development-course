@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Object Orientation</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+        //spread context
+        //string
+        let articleTitle = 'How to use the operator rest/spread'
+
+        console.log(articleTitle)
+        console.log(...articleTitle)
+        console.log([...articleTitle])
+
+        //array
+        let courseList = ['NodeJS and MongoDB', 'ES6', 'TypeScript and Angular 4']
+        let courseList2 = ['Android/IOS Multiplatform', 'Introduction to GNU/Linux'] 
+        let completeCourseList = ['Full Web', 'Full Android', ...courseList, ...courseList2]
+
+        console.log(completeCourseList)
+
+        //object
+        let person = {name: 'Paul', age: 30}
+        let clone = {address: 'Abc Street', ...person}
+
+        console.log(clone)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Object Orientation</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+        //rest context
+        function sum(...param) {
+            let result = 0
+            console.log(param)
+            param.forEach(v => result += v)
+            return result
+        }
+        console.log(sum(3, 8, 5, 7, 8, 10, 115))
+
+        function multiplication(m, ...p) {
+            console.log(m)
+            let result = 0
+            console.log(p)
+            p.forEach(v => result += m * v)
+            return result
+        }
+        console.log(multiplication(5, 7, 12, 3, 49))
+        console.log(sum)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

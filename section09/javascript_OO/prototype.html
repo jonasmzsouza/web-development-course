@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Object Orientation</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+        //Plane
+        //color and model attributes, takeoff method
+
+        //static object
+        let a1 = {
+        color: 'Black',
+        model: 'Airbus a380',
+        levantarVoo: function() {console.log('takeoff')}
+        }
+
+        //construction function
+        let PlaneF = function (){
+        this.color = 'Green',
+        this.model = 'Boeing 787',
+        this.levantarVoo = function() {console.log('takeoff')}
+        }
+
+        let a2 = new PlaneF()
+        
+        //class
+        class PlaneC{
+        constructor(){
+            this.color = 'White',
+            this.model = 'Embraer E-Jets'
+        }
+
+        levantarVoo() {
+            console.log('takeoff')
+        }
+        }
+
+        let a3 = new PlaneC()
+        console.log(a1)
+        console.log(a2)
+        console.log(a3)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

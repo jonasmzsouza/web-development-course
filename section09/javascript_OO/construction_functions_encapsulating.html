@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Object Orientation</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+        let Car = function (){
+            this.color = 'Green'
+            this.model = 'Camaro'
+            this.currentSpeed = 0
+            this.maxSpeed = 180
+
+            this.speedUp = function () {
+                let speed = this.getCurrentSpeed() + 55
+                if(speed > this.maxSpeed) {
+                    speed = this.maxSpeed
+                }
+                this.setCurrentSpeed(speed)
+
+            }
+            this.getCurrentSpeed = function(){
+                return this.currentSpeed
+            }
+            this.setCurrentSpeed = function (currentSpeed){
+                this.currentSpeed = currentSpeed
+            }
+        }
+
+        let car = new Car()
+        console.log(car.currentSpeed)
+        car.speedUp()
+        console.log(car.currentSpeed)
+        car.speedUp()
+        console.log(car.currentSpeed)
+        car.speedUp()
+        console.log(car.currentSpeed)
+        car.speedUp()
+        console.log(car.currentSpeed)
+        car.maxSpeed = 300
+        car.speedUp()
+        console.log(car.currentSpeed)
+
+
+        let Car2 = function (){
+
+            var maxSpeed = 180
+            var kilometersTraveled = 0
+
+            this.color = 'Green'
+            this.model = 'Camaro'
+            this.currentSpeed = 0
+            
+
+            this.speedUp = function () {
+                let speed = this.getCurrentSpeed() + 55
+                if(speed > maxSpeed) {
+                    speed = maxSpeed
+                }
+                this.setCurrentSpeed(speed)
+
+                setKilometersTraveled(0.05)
+                console.log(kilometersTraveled)
+            }
+            this.getCurrentSpeed = function(){
+                return this.currentSpeed
+            }
+            this.setCurrentSpeed = function (currentSpeed){
+                this.currentSpeed = currentSpeed
+            }
+
+            var setKilometersTraveled = function(k) {
+                kilometersTraveled += k
+            }
+        }
+
+        let car2 = new Car2()
+        console.log(car2.currentSpeed)
+        car2.speedUp()
+        console.log(car2.currentSpeed)
+        car2.speedUp()
+        console.log(car2.currentSpeed)
+        car2.speedUp()
+        console.log(car2.currentSpeed)
+        car2.speedUp()
+        console.log(car2.currentSpeed) 
+        //car2.maxSpeed = 300
+        car.speedUp()
+        console.log(car2.currentSpeed)     
+
+        console.log(car)
+        console.log(car2)
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

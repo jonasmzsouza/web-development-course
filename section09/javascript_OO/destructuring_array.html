@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Object Orientation</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+        //destructuring
+        //array => []
+        let fruits = ['Pineapple', 'Grape', 'Pear', 'Papaya']
+
+        //let [a, b, , c] = fruits // skip an index
+        let [a, b = 'Avocado', c, d, e = 'Banana'] = fruits
+
+        //console.log(a,b,c,d,e)
+        let things = [['Pineapple', 'Grape', 'Pear', 'Papaya'], ['Josef', 'Mary']]
+        let [,[,name]] = things
+        let [[,,fruit],] = things
+
+        console.log(name)
+        console.log(fruit)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

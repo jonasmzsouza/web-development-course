@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Object Orientation</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+        //destructuring
+        //object => {}
+        let product = {
+            description: 'Notebook',
+            price: 1800,
+            details: {
+                manufacturer: 'abc',
+                model: 'xyz'
+            }
+        }
+
+        let { description, price } = product
+        console.log(description, price)
+
+        let {description: d, price: p = 1000, discount = 5} = product
+        console.log(d, p, discount)
+
+        let { details: { manufacturer: f, model = 'Uninformed' } } = product
+        console.log(f, model)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

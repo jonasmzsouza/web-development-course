@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Object Orientation</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+        class Product {
+            constructor(description, price){
+                this.description = description
+                this.price = price
+            }
+            
+            showDescription(){
+                console.log(`${this.description} for only ${this.price}`)
+            }
+        }
+
+        let product = new Product('Notebook', 2200)
+        product.showDescription()
+
+        let literalProduct = {
+            description: 'Fridge',
+            price: 1800,
+            showDescription: function () {
+                console.log(`${this.description} for only ${this.price}`)
+            }
+        }
+
+        literalProduct.showDescription()
+        //----------------------------------------
+        /* form -> server
+            retrieves data and assembles a literal object
+                literal object -> JSON -> HTTP -> server -> store */
+
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>
