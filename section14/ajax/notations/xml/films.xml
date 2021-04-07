@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<films>
+    <film id="1">
+        <title>Avengers: Infinity War</title>
+        <synopsis>Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most powerful enemy yet -- the evil Thanos. On a mission to collect all six Infinity Stones, Thanos plans to use the artifacts to inflict his twisted will on reality. The fate of the planet and existence itself has never been more uncertain as everything the Avengers have fought for has led up to this moment.</synopsis>
+        <genre>Adventure</genre>
+        <genre>Action</genre>
+        <cast>
+            <actor>Robert Downey Jr</actor>
+            <actor>Chris Hemsworth</actor>
+            <actor>Mark Ruffalo</actor>
+        </cast>
+        <releaseDate country='Brazil'>April 26, 2018</releaseDate>
+    </film>
+
+    <film id="2">
+        <title>What Happened to Monday</title>
+        <synopsis>In a world where families are allowed only one child due to overpopulation, resourceful identical septuplets must avoid governmental execution and dangerous infighting while investigating the disappearance of one of their own.</synopsis>
+        <genre>Sci-Fi</genre>
+        <genre>Action</genre>
+        <cast>
+            <actor>Noomi Rapace</actor>
+            <actor>Glenn Close</actor>
+            <actor>Willem Dafoe</actor>
+        </cast>
+        <releaseDate country='France'>August 30, 2017</releaseDate>
+    </film>
+</films>

@@ -6,11 +6,11 @@ Repository of classes and exercises.
 
 ## Section03 - HTML5
 ### Introduction to HTML5
-- [Challenge](https://github.com/jonasmzsouza/web-development-course/blob/master/Section03/first-project/quick-challenge-01.html) - header, paragraphs, text formatting, ordered list and unordered list
-- [Images](https://github.com/jonasmzsouza/web-development-course/blob/master/Section03/first-project/project.html)
-- [Links](https://github.com/jonasmzsouza/web-development-course/blob/master/Section03/first-project/index.html)
-- [Tables](https://github.com/jonasmzsouza/web-development-course/blob/master/Section03/first-project/tables.html)
-- [Forms](https://github.com/jonasmzsouza/web-development-course/blob/master/Section03/first-project/form.html)
+- [Challenge](https://github.com/jonasmzsouza/web-development-course/blob/master/section03/first-project/quick-challenge-01.html) - header, paragraphs, text formatting, ordered list and unordered list
+- [Images](https://github.com/jonasmzsouza/web-development-course/blob/master/section03/first-project/project.html)
+- [Links](https://github.com/jonasmzsouza/web-development-course/blob/master/section03/first-project/index.html)
+- [Tables](https://github.com/jonasmzsouza/web-development-course/blob/master/section03/first-project/tables.html)
+- [Forms](https://github.com/jonasmzsouza/web-development-course/blob/master/section03/first-project/form.html)
 
 ### Projects
 - [UNES](https://github.com/jonasmzsouza/web-development-course/tree/master/section03/unes-project)
@@ -18,23 +18,23 @@ Repository of classes and exercises.
 
 ## Section04 - CSS3
 ### Introduction to CSS
-- Inline Style -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/inline-style.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/css/style.css)
-- Internal Style -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/internal-style.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/css/style.css)
-- Classes & IDs -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/classes-ids.html)
-- Tags: Div & Span -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/div-span.html)
-- Borders -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/borders.html)
-- Fonts & Colors -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/fonts-colors.html)
-- Text Sizes -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/text-sizes.html)
-- Text Styles -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/text-styles.html)
-- Background: Color & Image -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/bg-color-image.html)
-- External Style -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/external-style.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/css/style.css)
-- Box Model -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/box-model.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/css/box-model.css)
-- Elements: Floating -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/floating-elements.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/css/floating-elements.css)
-- Elements: Floating - Practice -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/floating-elements-in-practice.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/css/floating-elements-in-practice.css)
-- Elements: Inline, Block & Inline-Block -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/inline-block-elements.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/css/inline-block-elements.css)
-- Positioning -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/positioning.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/css/positioning.css)
-- Superimpose Elements -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/superimpose-elements.html)| [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/css/superimpose-elements.css)
-- Link Formatting -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/link-formatting.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section04/css3-project/css/link-formating.css)
+- Inline Style -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/inline-style.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/css/style.css)
+- Internal Style -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/internal-style.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/css/style.css)
+- Classes & IDs -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/classes-ids.html)
+- Tags: Div & Span -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/div-span.html)
+- Borders -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/borders.html)
+- Fonts & Colors -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/fonts-colors.html)
+- Text Sizes -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/text-sizes.html)
+- Text Styles -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/text-styles.html)
+- Background: Color & Image -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/bg-color-image.html)
+- External Style -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/external-style.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/css/style.css)
+- Box Model -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/box-model.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/css/box-model.css)
+- Elements: Floating -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/floating-elements.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/css/floating-elements.css)
+- Elements: Floating - Practice -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/floating-elements-in-practice.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/css/floating-elements-in-practice.css)
+- Elements: Inline, Block & Inline-Block -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/inline-block-elements.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/css/inline-block-elements.css)
+- Positioning -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/positioning.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/css/positioning.css)
+- Superimpose Elements -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/superimpose-elements.html)| [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/css/superimpose-elements.css)
+- Link Formatting -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/link-formatting.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section04/css3-project/css/link-formating.css)
 
 ### Projects
 - [Anna Bella](https://github.com/jonasmzsouza/web-development-course/tree/master/section04/anna-bella-project)
@@ -43,21 +43,21 @@ Repository of classes and exercises.
 
 ## Section05 - CSS3 Intermediate and Advanced
 ### CSS Intermediate and Advanced
-- Selectors -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/selectors.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/css/selectors.css)
-- Inheritance & Specificity -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/inheritance-specificity.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/css/inheritance-specificity.css)
-- Navigation Menu: Vertical -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/vertical-navigation-bar.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/css/vertical-navigation-bar.css)
-- Navigation Menu: Horizontal -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/horizontal-navigation-bar.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/css/horizontal-navigation-bar.css)
-- Navigation Menu: Tabbed -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/tabbed-navigation.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/css/tabbed-navigation.css)
-- Layout: Fixed Width -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/fixed-width-layout.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/css/fixed-width-layout.css)
-- Layout: Liquid -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/liquid-layout.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/css/liquid-layout.css)
-- Layout: Liquid with Images -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/liquid-images.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/css/liquid-images.css)
-- Layout: False Column -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/false-column.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/css/false-column.css)
-- Styling: Tables -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/styling-table.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/css/styling-table.css)
-- Styling: Forms -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/styling-form.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/css/styling-form.css)
-- Styling: Login Form -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/styling-login-form.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/css/styling-login-form.css)
-- Styling: Rounding Image -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/rounding-image.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/css3-intermediate/css/rounding-image.css)
-- Parallax -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/parallax/index.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/parallax/css/style.css)
-- Custom Font -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/custom-font/index.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section05/custom-font/css/style.css)
+- Selectors -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/selectors.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/css/selectors.css)
+- Inheritance & Specificity -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/inheritance-specificity.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/css/inheritance-specificity.css)
+- Navigation Menu: Vertical -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/vertical-navigation-bar.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/css/vertical-navigation-bar.css)
+- Navigation Menu: Horizontal -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/horizontal-navigation-bar.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/css/horizontal-navigation-bar.css)
+- Navigation Menu: Tabbed -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/tabbed-navigation.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/css/tabbed-navigation.css)
+- Layout: Fixed Width -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/fixed-width-layout.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/css/fixed-width-layout.css)
+- Layout: Liquid -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/liquid-layout.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/css/liquid-layout.css)
+- Layout: Liquid with Images -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/liquid-images.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/css/liquid-images.css)
+- Layout: False Column -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/false-column.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/css/false-column.css)
+- Styling: Tables -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/styling-table.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/css/styling-table.css)
+- Styling: Forms -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/styling-form.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/css/styling-form.css)
+- Styling: Login Form -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/styling-login-form.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/css/styling-login-form.css)
+- Styling: Rounding Image -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/rounding-image.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/css3-intermediate/css/rounding-image.css)
+- Parallax -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/parallax/index.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/parallax/css/style.css)
+- Custom Font -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/custom-font/index.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section05/custom-font/css/style.css)
 
 ### Projects
 - [City News](https://github.com/jonasmzsouza/web-development-course/tree/master/section05/city-news-project)
@@ -66,17 +66,17 @@ Repository of classes and exercises.
 
 ## Section06 - Special HTML5 and CSS3 features
 ### Special CSS3 Features
-- Normalize -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section06/special-css3-features/normalize.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section06/special-css3-features/css/normalize.css)
-- Border Radius & Box Sizing -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section06/special-css3-features/border-radius-box-sizing.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section06/special-css3-features/css/style.css)
-- Gradient & Transparency -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section06/special-css3-features/gradient-transparency.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section06/special-css3-features/css/style.css)
-- Shadow -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section06/special-css3-features/shadow.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section06/special-css3-features/css/style.css)
-- Animation -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section06/special-css3-features/animation.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section06/special-css3-features/css/style.css)
-- Transition -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section06/special-css3-features/transition.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section06/special-css3-features/css/style.css)
-- Flexbox - Container -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section06/special-css3-features/flexbox-container.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section06/special-css3-features/css/flexbox.css)
+- Normalize -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section06/special-css3-features/normalize.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section06/special-css3-features/css/normalize.css)
+- Border Radius & Box Sizing -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section06/special-css3-features/border-radius-box-sizing.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section06/special-css3-features/css/style.css)
+- Gradient & Transparency -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section06/special-css3-features/gradient-transparency.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section06/special-css3-features/css/style.css)
+- Shadow -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section06/special-css3-features/shadow.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section06/special-css3-features/css/style.css)
+- Animation -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section06/special-css3-features/animation.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section06/special-css3-features/css/style.css)
+- Transition -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section06/special-css3-features/transition.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section06/special-css3-features/css/style.css)
+- Flexbox - Container -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section06/special-css3-features/flexbox-container.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section06/special-css3-features/css/flexbox.css)
 
 ### New HTML5 Tags
-- New Tags -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section06/new-html5-tags/new-html-tags.html)
-- New Input Types -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section06/new-html5-tags/new-input-types.html)
+- New Tags -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section06/new-html5-tags/new-html-tags.html)
+- New Input Types -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section06/new-html5-tags/new-input-types.html)
 
 ### Projects
 - [National Museum](https://github.com/jonasmzsouza/web-development-course/tree/master/section06/national-museum-project)
@@ -84,30 +84,30 @@ Repository of classes and exercises.
 
 ## Section07 - Bootstrap & Responsive Design
 ### Introduction to Bootstrap & Responsive Design
-- Bootstrap CSS v4.5.3 -> [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/css/bootstrap.min.css)
-- Text Formatting -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/text-formatting.html) 
-- Text Alignment -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/text-alignment.html)
-- Floating Elements -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/floating-elements.html)
-- Colors & Backgrounds -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/colors-background.html)
-- Margin & Padding -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/margin-padding.html)
-- Size & Border -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/size-border.html)
-- Media Types -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/media-types.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/css/style.css) | [CSS - Printer](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/css/print-style.css)
-- Breakpoints - > [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/breakpoints.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/css/breakpoints.css)
-- Buttons -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/buttons.html)
-- Navigation Bar -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/navigation-bar.html)
-- Lists -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/lists.html)
-- Input Group -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/input-group.html)
-- Progress Bars & Alerts -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/progress-bars-alerts.html)
-- Tables & Pagination -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/tables-pagination.html)
-- Cards -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/cards.html)
-- Jumbotron & Image Alignment -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/jumbotron-image-alignment.html)
-- Icons -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/icons.html)
-- Grid: System -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/grid-system.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/css/style.css)
-- Grid: Settings -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/grid-settings.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/css/style.css)
-- Grid: Alignment -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/grid-alignment.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/css/style.css)
-- Flexbox Classes -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/flexbox-classes.html)
-- Margin & Wrap -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/margin-wrap.html)
-- Carousel -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/Section07/bootstrap-responsive-design/carousel.html)
+- Bootstrap CSS v4.5.3 -> [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/css/bootstrap.min.css)
+- Text Formatting -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/text-formatting.html) 
+- Text Alignment -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/text-alignment.html)
+- Floating Elements -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/floating-elements.html)
+- Colors & Backgrounds -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/colors-background.html)
+- Margin & Padding -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/margin-padding.html)
+- Size & Border -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/size-border.html)
+- Media Types -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/media-types.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/css/style.css) | [CSS - Printer](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/css/print-style.css)
+- Breakpoints - > [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/breakpoints.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/css/breakpoints.css)
+- Buttons -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/buttons.html)
+- Navigation Bar -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/navigation-bar.html)
+- Lists -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/lists.html)
+- Input Group -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/input-group.html)
+- Progress Bars & Alerts -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/progress-bars-alerts.html)
+- Tables & Pagination -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/tables-pagination.html)
+- Cards -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/cards.html)
+- Jumbotron & Image Alignment -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/jumbotron-image-alignment.html)
+- Icons -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/icons.html)
+- Grid: System -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/grid-system.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/css/style.css)
+- Grid: Settings -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/grid-settings.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/css/style.css)
+- Grid: Alignment -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/grid-alignment.html) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/css/style.css)
+- Flexbox Classes -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/flexbox-classes.html)
+- Margin & Wrap -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/margin-wrap.html)
+- Carousel -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section07/bootstrap-responsive-design/carousel.html)
 
 ### Projects
 -  [Finans](https://github.com/jonasmzsouza/web-development-course/tree/master/section07/finans-project)
@@ -293,3 +293,9 @@ Repository of classes and exercises.
 - [ALIAS](https://github.com/jonasmzsouza/web-development-course/blob/master/section13/mysql/alias.sql)
 
 
+## Section14 - Ajax
+### Synchronous and asynchronous requests
+- [Synchronous](https://github.com/jonasmzsouza/web-development-course/blob/master/section14/ajax/synchronous)
+- [Asynchronous](https://github.com/jonasmzsouza/web-development-course/blob/master/section14/ajax/asynchronous)
+- [Requests - XML notation](https://github.com/jonasmzsouza/web-development-course/blob/master/section14/ajax/notations/xml)
+- [Requests - JSON notation](https://github.com/jonasmzsouza/web-development-course/blob/master/section14/ajax/notations/json)
