@@ -299,3 +299,6 @@ Repository of classes and exercises.
 - [Asynchronous](https://github.com/jonasmzsouza/web-development-course/blob/master/section14/ajax/asynchronous)
 - [Requests - XML notation](https://github.com/jonasmzsouza/web-development-course/blob/master/section14/ajax/notations/xml)
 - [Requests - JSON notation](https://github.com/jonasmzsouza/web-development-course/blob/master/section14/ajax/notations/json)
+
+### Projects
+- [Address Search](https://github.com/jonasmzsouza/web-development-course/tree/master/section14/app-address-search)
