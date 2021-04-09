@@ -302,3 +302,13 @@ Repository of classes and exercises.
 
 ### Projects
 - [Address Search](https://github.com/jonasmzsouza/web-development-course/tree/master/section14/app-address-search)
+
+
+## Section15 - PHP with PDO and MySQL
+### Introduction to PDO
+- [Exec](https://github.com/jonasmzsouza/web-development-course/blob/master/section15/php-pdo/exec.php)
+- [Query with fetchAll](https://github.com/jonasmzsouza/web-development-course/blob/master/section15/php-pdo/query_fetchall.php)
+- [Query with fetch](https://github.com/jonasmzsouza/web-development-course/blob/master/section15/php-pdo/query_fetch.php)
+- [Foreach](https://github.com/jonasmzsouza/web-development-course/blob/master/section15/php-pdo/foreach.php)
+- [SQL Injection](https://github.com/jonasmzsouza/web-development-course/blob/master/section15/php-pdo/sql_injection.php)
+- [Prepare Statement](https://github.com/jonasmzsouza/web-development-course/blob/master/section15/php-pdo/prepare_statement.php)
