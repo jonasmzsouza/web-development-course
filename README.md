@@ -312,3 +312,6 @@ Repository of classes and exercises.
 - [Foreach](https://github.com/jonasmzsouza/web-development-course/blob/master/section15/php-pdo/foreach.php)
 - [SQL Injection](https://github.com/jonasmzsouza/web-development-course/blob/master/section15/php-pdo/sql_injection.php)
 - [Prepare Statement](https://github.com/jonasmzsouza/web-development-course/blob/master/section15/php-pdo/prepare_statement.php)
+
+### Projects
+- [Task List](https://github.com/jonasmzsouza/web-development-course/tree/master/section15/app-task-list)
