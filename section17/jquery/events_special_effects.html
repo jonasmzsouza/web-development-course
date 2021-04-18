@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <style>
+        button {
+            margin-bottom: 5px;
+            width: 100px;
+        }
+
+        .div {
+            width: 100px;
+            height: 100px;
+        }
+
+        .div1 {
+            background-color: red
+        }
+
+        .div2 {
+            background-color: green
+        }
+
+        .div3 {
+            background-color: blue
+        }
+
+        .group {
+            padding: 25px;
+            float: left
+        }
+    </style>
+
+    <script>
+        $(document).ready(() => {
+
+            // show, hide, toogle
+            $('#btn1').on('click', () => {
+                // string: slow, meio, fast
+                // number: .toggle(2000)
+                $('#div1').toggle('slow')
+            })
+
+            // fadeOut, fadeIn, fadeToogle, fadeTo(slow, 0.5) 0.5->opacity
+            $('#btn2').on('click', () => {
+                $('#div2').fadeToggle(2000)
+            })
+
+            // slideUp, slideDown, slideToggle
+            $('#btn3').on('click', () => {
+                $('#div3').slideToggle(2000)
+            })
+
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <div class="group">
+        <button id="btn1" type="button">DIV 1</button>
+        <div id="div1" class="div div1"></div>
+    </div>
+
+    <div class="group">
+        <button id="btn2" type="button">DIV 2</button>
+        <div id="div2" class="div div2"></div>
+    </div>
+
+    <div class="group">
+        <button id="btn3" type="button">DIV 3</button>
+        <div id="div3" class="div div3"></div>
+    </div>
+
+</body>
+
+</html>

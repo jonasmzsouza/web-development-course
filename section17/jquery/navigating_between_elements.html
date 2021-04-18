@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(() => {
+
+            console.log($('.section1').parent())
+
+            console.log($('.subsection').closest('#page'))
+
+            console.log($('.subsection').closest('.section1'))
+
+            console.log($('#footer').find('p'))
+
+            console.log($('#top').find('.item'))
+
+            console.log($('.section1').parent().find('h1'))
+
+            console.log($('.subsection').closest('#page').find('h1'))
+
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <div id="top">
+        <ul class="menu">
+            <li class="item"></li>
+            <li class="item"></li>
+        </ul>
+    </div>
+
+    <div id="page">
+        <div class="section1">
+            <div class="subsection"></div>
+        </div>
+
+        <div class="section2">
+            <h1></h1>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div>
+            <p></p>
+            <span id="option1"></span>
+        </div>
+    </div>
+
+</body>
+
+</html>

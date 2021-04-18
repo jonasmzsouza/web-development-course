@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(() => {
+
+            // BROWSER
+
+            $('#onload').text('Page loaded')
+
+            $(window).scroll(() => {
+                $('#scroll').html('Trigger scroll')
+            })
+
+            $(window).resize(() => {
+                $('#resize').html('Resized page').css('background-color', 'red')
+            })
+
+            /// function
+            $('#div1').scroll(function () {
+                $(this).css('background-color', 'blue')
+            })
+
+            /// arrow function
+            $('#div2').scroll(e => {
+                $(e.target).css('background-color', 'green')
+            })
+
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <div id="top">
+        <h1>Events</h1>
+    </div>
+
+    <div>
+        <h3>Browser</h3>
+        <span>Onload: </span><span id="onload">?</span><br />
+        <span>Scroll: </span><span id="scroll">?</span><br />
+        <span>Resize window: </span><span id="resize">?</span>
+        <div id="div1" style="height: 100px; width: 100px; border: 1px solid; overflow-y: scroll">
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </div>
+        <div id="div2" style="height: 100px; width: 100px; border: 1px solid; overflow-y: scroll">
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </div>
+        <hr />
+    </div>
+
+</body>
+
+</html>

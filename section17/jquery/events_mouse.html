@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <style>
+        #externalDiv {
+            background-color: #ccc;
+            width: 80px;
+            height: 80px;
+            padding: 60px;
+        }
+
+        #internalDiv {
+            background-color: blue;
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+    <script>
+        $(document).ready(() => {
+
+            // MOUSE
+            /// mousedown, mouseup, click
+            $('#btn1').mousedown(() => {
+                $('#div3').css('background-color', 'orange')
+            })
+
+            $('#btn1').mouseup(() => {
+                $('#div3').css('background-color', 'yellow')
+            })
+
+            /// dblclick, mousemove, mouseenter, mouseleave, mouseover, mouseout
+            $('#btn2').dblclick(() => {
+                $('#div3').css('background-color', 'grey')
+            })
+
+            $('#div3').mousemove((e) => {
+                $('#resultDiv').html(' X: ' + e.offsetX + ' / Y: ' + e.offsetY)
+            })
+
+            /*
+            /// mouseover, mouseout (old)
+            /// there is the bubbling effect that generates confusion
+            $('#externalDiv').mouseover(() => {
+                $('#resultExternalDiv').html('Entered the external!')
+                console.log('Entered the external!')
+            })
+
+            $('#externalDiv').mouseout(() => {
+                $('#resultExternalDiv').html('Exited the external!')
+                console.log('Exited the external!')
+            })
+
+            $('#internalDiv').mouseover(() => {
+                $('#resultInternalDiv').html('Entered the internal!')
+                console.log('Entered the internal!')
+            })
+
+            $('#internalDiv').mouseout(() => {
+                $('#resultInternalDiv').html('Exited the internal!')
+                console.log('Exited the internal!')
+            })
+            */
+
+            /// mouseenter, mouseleave (new)
+            /// possess the intelligence to avoid the bubbling effect
+            $('#externalDiv').mouseenter(() => {
+                $('#resultExternalDiv').html('Entered the external!')
+                console.log('Entered the external!')
+            })
+
+            $('#externalDiv').mouseleave(() => {
+                $('#resultExternalDiv').html('Exited the external!')
+                console.log('Exited the external!')
+            })
+
+            $('#internalDiv').mouseenter(() => {
+                $('#resultInternalDiv').html('Entered the external!')
+                console.log('Entered the external!')
+            })
+
+            $('#internalDiv').mouseleave(() => {
+                $('#resultInternalDiv').html('Exited the external!')
+                console.log('Exited the external!')
+            })
+
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <div id="top">
+        <h1>Events</h1>
+    </div>
+
+    <div>
+        <h3>Mouse</h3>
+        <button id="btn1" type="button">Click here</button>
+        <button id="btn2" type="button">Click here 2x</button>
+        <div id="div3" style="background-color: red; width: 80px; height: 50px; margin-top: 10px; margin-bottom: 10px">
+        </div>
+        <span>Result of the event on the div</span><span id="resultDiv"></span>
+
+        <div id="externalDiv">
+            <div id="internalDiv"></div>
+        </div>
+        <span>External Div: </span><span id="resultExternalDiv"></span>
+        <br />
+        <span>Internal Div: </span><span id="resultInternalDiv"></span>
+        <hr />
+    </div>
+
+</body>
+
+</html>

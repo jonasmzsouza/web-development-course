@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <style>
+        #div1 {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #000;
+        }
+
+        .highlighted {
+            background-color: red;
+        }
+    </style>
+
+    <script>
+        $(document).ready(() => {
+
+            $('#btn2').on('click', () => {
+                alert('BTN 2 clicked');
+            })
+
+            $('#btn1').on('click', () => {
+                $('#btn2').trigger('click')
+            })
+
+            /*
+            $('#div1').on('mouseenter', (e) => {
+                $(e.target).addClass('highlighted')
+            })
+
+            $('#div1').on('mouseleave', (e) => {
+                $(e.target).removeClass('highlighted')
+            })
+            */
+
+            /*
+            $('#div1').hover(
+                e => $(e.target).addClass('highlighted'), 
+                e => $(e.target).removeClass('highlighted')
+            )
+            */
+
+            $('#div1').hover(
+                e => $(e.target).toggleClass('highlighted')
+            )
+
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <button id="btn1" type="button">BTN 1</button>
+    <button id="btn2" type="button">BTN 2</button>
+
+    <hr>
+
+    <div id="div1"></div>
+
+</body>
+
+</html>

@@ -315,3 +315,24 @@ Repository of classes and exercises.
 
 ### Projects
 - [Task List](https://github.com/jonasmzsouza/web-development-course/tree/master/section15/app-task-list)
+
+
+## Section17 - jQuery
+### Introduction to jQuery
+- [Settings](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/settings.html)
+- [Selectors - Selecting elements](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/selecting_elements.html)
+- [Code execution sequence](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/code_execution_sequence.html)
+- [Retrieving and manipulating attributes of HTML elements](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/retrieving_manipulating_attributes.html)
+- [Retrieving and manipulating internal content of HTML elements](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/retrieving_manipulating_content.html)
+- [Retrieving and manipulating values (input, select)](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/retrieving_manipulating_values.html)
+- [Inserting and removing HTML elements](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/inserting_removing_elements.html)
+- [Navigating between elements](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/navigating_between_elements.html)
+- [Manipulating CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/manipulating_css.html)
+- [Events: Browser](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/events_browser.html)
+- [Events: Mouse](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/events_mouse.html)
+- [Events: Keyboard](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/events_keyboard.html)
+- [Events: Form](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/events_form.html)
+- [Events: on/off](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/events_on_off.html)
+- [Events: Programmatic and Auxiliary](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/events_programmatic_auxiliary.html)
+- [Events: Special effects](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/events_special_effects.html)
+- [Events: Animations](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/events_animations.html)

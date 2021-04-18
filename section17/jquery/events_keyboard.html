@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(() => {
+
+            // KEYBOARD
+
+            $('#keyboard').keydown((e) => {
+                $('#resultKey').html('key pressed')
+            })
+
+            $('#keyboard').keyup((e) => {
+                console.log(e.keyCode)
+                if (e.keyCode < 96 || e.keyCode > 105) {
+                    if (e.keyCode < 48 || e.keyCode > 57) {
+                        let txt = $(e.target).val()
+                        txt = txt.slice(0, -1)
+                        $(e.target).val(txt)
+                    }
+                }
+            })
+
+            $('#keyboard').keyup((e) => {
+                $('#resultKey').html('key released')
+
+                if (e.keyCode == 13) {
+                    let txt = $(e.target).val()
+                    $('#resultKey').html('pressed enter and the input text is: ' + txt)
+                    $(e.target).val('')
+                }
+                console.log('key released')
+            })
+
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <div id="top">
+        <h1>Events</h1>
+    </div>
+
+    <div>
+        <h3>Keyboard</h3>
+        <span>Name:</span>
+        <input type="text" id="keyboard" />
+        <span id="resultKey">Result of the event on the input</span>
+        <hr />
+    </div>
+
+</body>
+
+</html>

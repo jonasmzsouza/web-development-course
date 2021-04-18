@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <style>
+        .div {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #000;
+            background-color: #aaa;
+        }
+    </style>
+
+    <script>
+        $(document).ready(() => {
+
+            $('button').on('click', () => {
+
+                let finalLook = {
+                    'width': '160px',
+                    'height': '160px',
+                    'margin-left': '200px',
+                    'margin-top': '200px',
+                    'border-radius': '100px'
+                }
+
+                $('#div1').animate(
+                    finalLook, {
+                        duration: 3500,
+                        start: () => {
+                            console.log('animation started')
+                        },
+                        complete: () => {
+                            console.log('finished animation div1 and animation started div2')
+
+                            $('#div2').animate(
+                                finalLook,
+                                'slow'
+                            )
+                        }
+                    })
+            })
+
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <button id="btn" type="button">Start animation</button>
+    <div id="div1" class="div"></div>
+    <div id="div2" class="div"></div>
+
+</body>
+
+</html>

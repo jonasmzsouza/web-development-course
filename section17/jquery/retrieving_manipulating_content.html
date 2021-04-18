@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(() => {
+
+            console.log('content div 1: ', $('#div1').html())
+            console.log('content div 2: ', $('#div2').html())
+
+
+            $('#div1').html('<strong style="color:red">I am a new content</strong')
+
+            $('#div1').text('<strong style="color:red">I am a new content</strong')
+
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <div id="div1" style="border: 1px solid #000; width: 150px; height: 150px">
+        <a href="#">Test link</a>
+        <p>Test paragraph</p>
+        <div>Test div</div>
+    </div>
+
+    <div id="div2" style="border: 1px solid #000; width: 150px; height: 150px">
+        Div 2
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(() => {
+
+            console.log($('#name').val())
+            console.log($('#origin').val())
+
+            console.log($('#name').val('Jonas M.'))
+            console.log($('#origin').val('1'))
+
+            console.log($('.gender:checked').val())
+
+            $.each($('.interest:checked'), (index, value) => {
+                console.log(index, value.value)
+            })
+
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <p>Name:</p>
+    <input type="text" id="name">
+    <br>
+
+    <p>where did you find us?</p>
+    <select id="origin">
+        <option value="1">Google</option>
+        <option value="2">Facebook</option>
+        <option value="3">Radio</option>
+        <option value="4">Other ways</option>
+    </select>
+    <br>
+
+    <p>Gender:</p>
+    <input type="radio" name="gender" class="gender" value="f">Feminine<br> 
+    <input type="radio" name="gender" class="gender" value="m" checked>Masculine<br>
+    <br>
+
+    <p>Interest:</p>
+    <input type="checkbox" name="interest" class="interest" value="php">PHP<br> 
+    <input type="checkbox" name="interest" class="interest" value="js" checked>JavaScript<br>
+    <input type="checkbox" name="interest" class="interest" value="angular" checked>Angular<br>
+    <input type="checkbox" name="interest" class="interest" value="nodejs">NodeJS<br>
+
+</body>
+
+</html>

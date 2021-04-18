@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <style>
+        .inputFocused {
+            background-color: red;
+        }
+    </style>
+    
+    <script>
+        $(document).ready(() => {
+
+            // FORM
+
+            $('#name, email').focus((e) => {
+                console.log('this HTML element received the focus')
+                $(e.target).addClass('inputFocused')
+            })
+
+            $('#name, email').blur((e) => {
+                console.log('this HTML element has lost focus')
+                $(e.target).removeClass('inputFocused')
+            })
+
+            $('#option').change((e) => {
+                console.log('the option has been modified: ' + $(e.target).val())
+            })
+
+            $('#form').submit((e) => {
+                e.preventDefault()
+                console.log('submitted form')
+            })
+
+            $('a').click(e => {
+                e.preventDefault()
+            })
+
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <div id="top">
+        <h1>Events</h1>
+    </div>
+
+    <div>
+        <h3>Form</h3>
+        <form id="form">
+            <span>Name:</span>
+            <input type="text" id="name" />
+
+            <span>E-mail:</span>
+            <input type="text" id="email" />
+
+            <span>Reason for contact:</span>
+            <select id="option">
+                <option value="">-- Select --</option>
+                <option value="doubt">Doubt</option>
+                <option value="suggestion">Suggestion</option>
+            </select>
+
+            <button type="submit">Send</button>
+        </form>
+        <a href="htp://www.google.com.br">Google</a>
+    </div>
+
+</body>
+
+</html>
