@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Custom Script-->
+    <script src="script.js"></script>
+
+    <title>Ajax with jQuery</title>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Nome" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="gender" value="feminine" class="form-check-input"><label
+                                class="form-check-label mr-3">Feminine</label>
+                            <input type="radio" name="gender" value="masculine" class="form-check-input"><label
+                                class="form-check-label mr-3">Masculine</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="email" placeholder="E-mail" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <select name="source" class="form-control">
+                            <option value="">-- Where you found us? --</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="google">Google</option>
+                            <option value="outro_meio">Another way</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" name="interest[]" value="php" class="form-check-input"><label
+                                class="form-check-label mr-3">PHP</label>
+                            <input type="checkbox" name="interest[]" value="js" class="form-check-input"><label
+                                class="form-check-label mr-3">JavaScript</label>
+                            <input type="checkbox" name="interest[]" value="NodeJS" class="form-check-input"><label
+                                class="form-check-label mr-3">NodeJS</label>
+                            <input type="checkbox" name="interest[]" value="MongoDB" class="form-check-input"><label
+                                class="form-check-label mr-3">MongoDB</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="message" class="form-control"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

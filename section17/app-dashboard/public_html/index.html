@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <!-- Custom Style-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+    </script>
+
+    <!-- Custom Script-->
+    <script src="script/script.js"></script>
+
+
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <div class="nav-side-menu">
+        <div class="brand">YOUR LOGO HERE</div>
+        <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+        <div class="menu-list">
+
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                    <a href="#" id="dashboard"><i class="fa fa-tachometer-alt sidebar-icon"></i> Dashboard</a>
+                </li>
+
+                <li data-toggle="collapse" data-target="#help" class="collapsed">
+                    <a href="#"><i class="fa fa-life-ring sidebar-icon"></i> Help <span class="arrow"><i
+                                class="fa fa-angle-down"></i></spam></a>
+                </li>
+                <ul class="sub-menu collapse" id="help">
+                    <li><a href="#" id="documentation"><i class="fa fa-angle-right"></i> Documentation</a></li>
+                    <li><a href="#" id="support"><i class="fa fa-angle-right"></i> Support <small><i
+                                    class="fa fa-external-link"></i></small></a></li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+
+    <!-- PAGES -->
+    <div class="main" id="page">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+
+                    <form>
+                        <div class="form-group row">
+                            <label class="col-sm-9 col-form-label">Competence:</label>
+                            <div class="col-sm-3">
+                                <select class="form-control-plaintext" id="competence">
+                                    <option value="">-- Select </option>
+                                    <option value="2021-04">April / 2021</option>
+                                    <option value="2021-05">May / 2021</option>
+                                    <option value="2021-06">June / 2021</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+
+                    <hr />
+
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Number of sales
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="numberSales">?</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Total sales
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="totalSales">?</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Active customers
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="activeCustomers">?</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Inactive customers
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="inactiveCustomers">?</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Total complaints
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="totalComplaints">?</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Total compliments
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="totalCompliments">?</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Total suggestions
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="totalSuggestions">?</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Total expenses
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="totalExpenses">?</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

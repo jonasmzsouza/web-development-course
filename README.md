@@ -336,3 +336,8 @@ Repository of classes and exercises.
 - [Events: Programmatic and Auxiliary](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/events_programmatic_auxiliary.html)
 - [Events: Special effects](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/events_special_effects.html)
 - [Events: Animations](https://github.com/jonasmzsouza/web-development-course/blob/master/section17/jquery/events_animations.html)
+
+
+### Projects - Ajax with jQuery
+- [App Dashboard](https://github.com/jonasmzsouza/web-development-course/tree/master/section17/app-dashboard)
+- [Ajax Extra - Serialize](https://github.com/jonasmzsouza/web-development-course/tree/master/section17/ajax-extra)
