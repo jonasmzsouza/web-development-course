@@ -341,3 +341,8 @@ Repository of classes and exercises.
 ### Projects - Ajax with jQuery
 - [App Dashboard](https://github.com/jonasmzsouza/web-development-course/tree/master/section17/app-dashboard)
 - [Ajax Extra - Serialize](https://github.com/jonasmzsouza/web-development-course/tree/master/section17/ajax-extra)
+
+
+## Section18 - MVC architecture standard with PHP
+### Projects - miniframework
+- [miniframework](https://github.com/jonasmzsouza/web-development-course/blob/master/section18/miniframework)
