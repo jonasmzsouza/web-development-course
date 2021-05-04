@@ -1,0 +1,128 @@
+<nav class="navbar navbar-expand-lg menu">
+    <div class="container">
+        <div class="navbar-nav">
+            <a class="menuItem" href="/timeline">
+                Home
+            </a>
+
+            <a class="menuItem" href="/logoff">
+                Logoff
+            </a>
+            <img src="/img/twitter_logo.png" class="menuIco" />
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="row pt-2">
+
+        <div class="col-md-3">
+            <div class="profile">
+                <div class="profileTop">
+
+                </div>
+
+                <div class="profilePanel">
+
+                    <div class="row mt-2 mb-2">
+                        <div class="col mb-2">
+                            <span class="profilePanelName">
+                                <?= $this->view->user_information['nm_user'] ?>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+
+                        <div class="col">
+                            <span class="profilePanelItem">Tweets</span><br />
+                            <span class="profilePanelItemValue">
+                                <?= $this->view->total_tweets['total_tweets'] ?>
+                            </span>
+                        </div>
+
+                        <div class="col">
+                            <span class="profilePanelItem">Following</span><br />
+                            <span class="profilePanelItemValue">
+                                <?= $this->view->total_following['total_following'] ?>
+                            </span>
+                        </div>
+
+                        <div class="col">
+                            <span class="profilePanelItem">Followers</span><br />
+                            <span class="profilePanelItemValue">
+                                <?= $this->view->total_followers['total_followers'] ?>
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="row mb-2">
+                <div class="col tweetBox">
+                    <form action="/tweet" method="post">
+                        <textarea class="form-control" name="tweet" id="exampleFormControlTextarea1" rows="3"
+                            maxlength="140"></textarea>
+
+                        <div class="col mt-2 d-flex justify-content-end">
+                            <button type="submit" class="btn btn-primary">Tweet</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <?php foreach($this->view->tweets as $id_tweet => $tweet) { ?>
+            <div class="row tweet">
+                <div class="col">
+                    <p>
+                        <strong><?= $tweet['nm_user'] ?></strong> 
+                        <span class="text text-muted">-<?= $tweet['dt_tweet'] ?></span>
+                    </p>
+                    <p><?= $tweet['ds_tweet'] ?></p>
+                    <br />
+                    <?php if($tweet['id_user'] == $_SESSION['id']) { ?>
+                    <form action="" method="get">
+                        <div class="col d-flex justify-content-end">
+                            <a href="/remove?id_tweet=<?=$tweet['id_tweet']?>" class="btn btn-danger">Remove</a>
+                        </div>
+                    </form>
+                    <?php } ?>
+                </div>
+            </div>
+            <?php } ?>
+
+            <div class="row mt-5">
+                <nav aria-label="...">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="?page=1" tabindex="-1" aria-disabled="true">First</a>
+                        </li>
+                        <?php for($i = 1; $i <= $this->view->total_pages; $i++) { ?> 
+                            <li class="page-item <?=$this->view->active_page == $i ? 'active' : '' ?>">
+                                <a class="page-link" href="?page=<?=$i?>"><?=$i?></a>
+                            </li>
+                        <?php } ?>
+                        <li class="page-item">
+                            <a class="page-link" href="?page=<?= $this->view->total_pages?>">Last</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="whoFollow">
+                <span class="whoFollowTitle">Who to follow</span><br />
+                <hr />
+                <a href="/who_to_follow" class="whoFollowTxt">Search for known people</a>
+            </div>
+        </div>
+
+    </div>
+</div>
