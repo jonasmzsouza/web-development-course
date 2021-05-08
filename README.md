@@ -361,3 +361,6 @@ Repository of classes and exercises.
 - [Response types](https://github.com/jonasmzsouza/web-development-course/blob/master/section20/slim/response_types.php)
 - [Middleware](https://github.com/jonasmzsouza/web-development-course/blob/master/section20/slim/middleware.php)
 - [Database](https://github.com/jonasmzsouza/web-development-course/blob/master/section20/slim/database.php)
+
+### Projects - API
+- [API](https://github.com/jonasmzsouza/web-development-course/blob/master/section20/slim-api)
