@@ -378,3 +378,4 @@ Repository of classes and exercises.
 ## Section22 - Applications with IONIC
 ### Introduction to IONIC
 - [Components - Buttons]
+- [Components - Cards]
