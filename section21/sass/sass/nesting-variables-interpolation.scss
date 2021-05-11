@@ -1,0 +1,42 @@
+/* Nesting */
+/* Reference parent selector */
+#content {
+    background: black;
+    padding: 15px;
+    h1 {
+        color: white;
+    }
+    a {
+        color: red;
+        &:hover {
+            color: yellow;
+        }
+    }
+}
+
+/* Variables */
+$title-color: red;
+$title-size: 20px;
+
+h2 {
+    color: $title-color;
+    font-size: $title-size;
+}
+
+/* Scope of variables */
+$standard-color: blue;
+#footer {
+    $standard-color: green; /* green !global -> defines that it is a global settings, replacing the initial settings.*/
+    background-color: $standard-color;
+}
+
+h3 {
+    background-color: $standard-color;
+}
+
+/* Interpolation */
+$class: red;
+$color: color;
+.red {
+    #{$color}: $class;
+}

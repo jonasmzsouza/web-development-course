@@ -1,0 +1,37 @@
+/* 
+Functions 
+*/
+$total: 12;
+@function column-width($column) {
+    @return percentage($column/$total);
+}
+
+$result: column-width(12);
+/*Result: #{$result}*/
+
+@for $i from 1 through $total {
+    .col-#{$i} {
+        width: column-width($i);
+        border: 1px solid white;
+        background: blue;
+        color: white;
+    }
+}
+
+/*
+Other Functions
+*/
+.alert-mix {
+    background: mix(blue,orange,50%);
+    color: yellow;
+}
+
+.alert-darken {
+    background: darken(red,20%);
+    color: yellow;
+}
+
+.alert-lighten {
+    background: lighten(red,20%);
+    color: yellow;
+}

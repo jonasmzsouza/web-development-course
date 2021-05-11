@@ -364,3 +364,12 @@ Repository of classes and exercises.
 
 ### Projects - API
 - [API](https://github.com/jonasmzsouza/web-development-course/blob/master/section20/slim-api)
+
+
+## Section21 - SASS
+### Introduction to SASS
+- Nesting, Variables and Interpolation -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section21/sass/nesting-variables-interpolation.html) | [SCSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section21/sass/sass/nesting-variables-interpolation.scss) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section21/sass/css/nesting-variables-interpolation.css)
+- For, While and Each -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section21/sass/for-while-each.html) | [SCSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section21/sass/sass/for-while-each.scss) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section21/sass/css/for-while-each.css)
+- Functions -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section21/sass/functions.html) | [SCSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section21/sass/sass/functions.scss) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section21/sass/css/functions.css)
+- Import -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section21/sass/import.html) | [SCSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section21/sass/sass/import.scss) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section21/sass/css/import.css)
+- Mixin, Inheritance and Control Directives -> [HTML](https://github.com/jonasmzsouza/web-development-course/blob/master/section21/sass/mixin-inheritance-control-directives.html) | [SCSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section21/sass/sass/mixin-inheritance-control-directives.scss) | [CSS](https://github.com/jonasmzsouza/web-development-course/blob/master/section21/sass/css/mixin-inheritance-control-directives.css)

@@ -1,0 +1,38 @@
+/* Nesting */
+/* Reference parent selector */
+#content {
+  background: black;
+  padding: 15px;
+}
+#content h1 {
+  color: white;
+}
+#content a {
+  color: red;
+}
+#content a:hover {
+  color: yellow;
+}
+
+/* Variables */
+h2 {
+  color: red;
+  font-size: 20px;
+}
+
+/* Scope of variables */
+#footer {
+  /* green !global -> defines that it is a global settings, replacing the initial settings.*/
+  background-color: green;
+}
+
+h3 {
+  background-color: blue;
+}
+
+/* Interpolation */
+.red {
+  color: red;
+}
+
+/*# sourceMappingURL=nesting-variables-interpolation.css.map */

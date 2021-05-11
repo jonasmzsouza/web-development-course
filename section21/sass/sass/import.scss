@@ -1,0 +1,10 @@
+/* for */
+/* through and to */
+@import 'variables.scss';
+
+@for $i from 1 through 3 {
+    .item-#{$i} {
+        background: $standard-color;
+        margin-bottom: 2px;
+    }
+}

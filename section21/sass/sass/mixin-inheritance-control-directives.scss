@@ -1,0 +1,94 @@
+/* Mixin */
+@mixin title($color:white, $bg-color:black) {
+    color: $color;
+    background: $bg-color;
+    padding: 10px 5px;  
+}
+
+h1 {
+    @include title();
+}
+
+h2 {
+    @include title(yellow);
+}
+
+/* Inheritance */
+/* Multiple directives */
+.class1 {
+    color: red;
+}
+
+.class2 {
+    background: black;
+}
+
+.inheritance {
+    @extend .class1;
+    @extend .class2;
+}
+
+/* Directives chaining */
+.father {
+    color: green;
+}
+
+.child {
+    @extend .father;
+    background: black;
+}
+
+.directives-chaining  {
+    @extend .child;
+    padding: 10px;
+}
+
+/* Placeholders(%) */
+%father2 {
+    color: green;
+}
+
+%child2 {
+    @extend %father2;
+    background: black;
+}
+
+.placeholders  {
+    @extend %child2;
+    padding: 10px;
+}
+
+
+/* Control directives */
+$color: red;
+@if($color == green) {
+    .control-directives {
+        color: $color;
+    }
+}@else if($color == red) {
+    .control-directives {
+        color: $color;
+    }    
+}@else{
+    .control-directives {
+        color: black;
+    } 
+}
+
+/* Control directives and mixins */
+@mixin theme($theme:default) {
+    @if ($theme == christmas) {
+        background: red;
+        color: white;
+    }@else if($theme == blackfriday) {
+        background: black;
+        color: white;        
+    }@else {
+        background: white;
+        color: black;   
+    }
+}
+
+.theme {
+    @include theme(christmas);
+}

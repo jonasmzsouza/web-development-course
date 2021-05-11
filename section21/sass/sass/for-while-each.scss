@@ -1,0 +1,29 @@
+/* for */
+/* through and to */
+@for $i from 1 through 3 {
+    .for-item-#{$i} {
+        background: green;
+        margin-bottom: 2px;
+    }
+}
+
+/* while */
+$counter: 1;
+@while $counter < 4 {
+    .while-item-#{$counter} {
+        background: orange;
+        margin-bottom: 2px;
+    }    
+    $counter: $counter + 1;
+}
+
+/* each */
+$list: blue, yellow, red;
+$counter: 1;
+@each $color in $list {
+        .each-item-#{$counter} {
+        background: $color;
+        margin-bottom: 2px;
+    }
+    $counter: $counter + 1;
+}

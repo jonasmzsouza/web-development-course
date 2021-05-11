@@ -1,0 +1,50 @@
+/* for */
+/* through and to */
+.for-item-1 {
+  background: green;
+  margin-bottom: 2px;
+}
+
+.for-item-2 {
+  background: green;
+  margin-bottom: 2px;
+}
+
+.for-item-3 {
+  background: green;
+  margin-bottom: 2px;
+}
+
+/* while */
+.while-item-1 {
+  background: orange;
+  margin-bottom: 2px;
+}
+
+.while-item-2 {
+  background: orange;
+  margin-bottom: 2px;
+}
+
+.while-item-3 {
+  background: orange;
+  margin-bottom: 2px;
+}
+
+/* each */
+.each-item-1 {
+  background: blue;
+  margin-bottom: 2px;
+}
+
+.each-item-2 {
+  background: yellow;
+  margin-bottom: 2px;
+}
+
+.each-item-3 {
+  background: red;
+  margin-bottom: 2px;
+}
+
+/*# sourceMappingURL=for-while-each.css.map */

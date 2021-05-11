@@ -1,0 +1,61 @@
+/* Mixin */
+h1 {
+  color: white;
+  background: black;
+  padding: 10px 5px;
+}
+
+h2 {
+  color: yellow;
+  background: black;
+  padding: 10px 5px;
+}
+
+/* Inheritance */
+/* Multiple directives */
+.class1, .inheritance {
+  color: red;
+}
+
+.class2, .inheritance {
+  background: black;
+}
+
+/* Directives chaining */
+.father, .child, .directives-chaining {
+  color: green;
+}
+
+.child, .directives-chaining {
+  background: black;
+}
+
+.directives-chaining {
+  padding: 10px;
+}
+
+/* Placeholders(%) */
+.placeholders {
+  color: green;
+}
+
+.placeholders {
+  background: black;
+}
+
+.placeholders {
+  padding: 10px;
+}
+
+/* Control directives */
+.control-directives {
+  color: red;
+}
+
+/* Control directives and mixins */
+.theme {
+  background: red;
+  color: white;
+}
+
+/*# sourceMappingURL=mixin-inheritance-control-directives.css.map */
