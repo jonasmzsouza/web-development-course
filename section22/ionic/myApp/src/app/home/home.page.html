@@ -8,58 +8,22 @@
 
 <ion-content [fullscreen]="true" class="ion-padding">
 
-  <h4>Grid</h4>
-  <ion-grid>
-    <ion-row>
-      <ion-col size="9">
-        Content 1
-      </ion-col>
-      <ion-col size="3">
-        Content 2
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="4">
-        Content 1
-      </ion-col>
-      <ion-col size="4">
-        Content 2
-      </ion-col>
-      <ion-col size="4">
-        Content 3
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <h4>Event Biding</h4>
+  <h5>{{ title }}</h5>
+  <ion-item>
+    <ion-label>Your name:</ion-label>
+    <!-- input, focus, click -->
+    <ion-input (input)="update()"></ion-input>
+  </ion-item>
 
-  <h4>Grid - offset</h4>
-  <ion-grid>
-    <ion-row>
-      <ion-col size="6">
-        Content 1
-      </ion-col>
-      <ion-col size="3" offset="3">
-        Content 2
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <ion-button (click)="action()">Button</ion-button>
 
-  <h4>Grid - text alignment</h4>
-  <ion-grid>
-    <ion-row>
-      <ion-col size="4" class="ion-text-start">1</ion-col>
-      <ion-col size="4" class="ion-text-center">2</ion-col>
-      <ion-col size="4" class="ion-text-end">3</ion-col>
-    </ion-row>
-  </ion-grid>
+  <h1>Data Binding</h1>
+  <h4>String interpolation</h4> 
+  <ion-img src="{{ localImage }}"></ion-img>
 
-  <h4>Grid - vertical alignment</h4>
-  <ion-grid>
-    <ion-row class="ion-align-items-center">
-      <ion-col size="4">1</ion-col>
-      <ion-col size="4">2</ion-col>
-      <ion-col size="4">3<br>+<br>+</ion-col>
-    </ion-row>
-  </ion-grid>
+  <h4>Property Biding</h4>
+  <ion-img [src]="randomImage"></ion-img>
 
 </ion-content>
 
