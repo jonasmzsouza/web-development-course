@@ -379,3 +379,4 @@ Repository of classes and exercises.
 ### Introduction to IONIC
 - [Components - Buttons]
 - [Components - Cards]
+- [Components - Lists]
