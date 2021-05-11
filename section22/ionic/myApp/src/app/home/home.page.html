@@ -1,20 +1,65 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      myApp
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <h1>Components</h1>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <h2>Buttons</h2>
+
+  <ion-button>Standard button</ion-button>
+  <ion-button href="http://google.com.br">Button with Link</ion-button>
+
+  <h4>Colors</h4>
+  <ion-button color="primary">primary</ion-button>
+  <ion-button color="secondary">secondary</ion-button>
+  <ion-button color="tertiary">tertiary</ion-button>
+
+  <ion-button color="success">success</ion-button>
+  <ion-button color="warning">warning</ion-button>
+  <ion-button color="danger">danger</ion-button>
+  <ion-button color="light">light</ion-button>
+  <ion-button color="medium">medium</ion-button>
+  <ion-button color="dark">dark</ion-button>
+
+  <h4>Expanded</h4>
+  <ion-button expand="full" color="success">full</ion-button>
+  <ion-button expand="block" color="danger">block</ion-button>
+
+  <h4>Rounded</h4>
+  <ion-button shape="round" color="danger">round</ion-button>
+
+  <h4>Fill</h4>
+  <ion-button fill="outline" expand="block" color="warning">fill</ion-button>
+
+  <h4>Icons</h4>
+  <ion-button>
+    <ion-icon slot="start" name="star"></ion-icon>
+    Icons
+  </ion-button><br>
+  <ion-button>
+    <ion-icon slot="end" name="star"></ion-icon>
+    Icons
+  </ion-button><br>
+  <ion-button>
+    <ion-icon slot="icon-only" name="star"></ion-icon>
+  </ion-button><br>
+
+  <h4>Sizes</h4>
+  <ion-button size="large">large</ion-button>
+  <ion-button>standard</ion-button>
+  <ion-button size="small">small</ion-button>
+  
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>
+      myApp
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
