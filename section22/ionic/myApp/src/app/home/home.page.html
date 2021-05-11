@@ -7,49 +7,59 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
-  <h1>Components</h1>
 
-  <h2>Input</h2>
+  <h4>Grid</h4>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="9">
+        Content 1
+      </ion-col>
+      <ion-col size="3">
+        Content 2
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+        Content 1
+      </ion-col>
+      <ion-col size="4">
+        Content 2
+      </ion-col>
+      <ion-col size="4">
+        Content 3
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <h4>Configuring input</h4>
-  <ion-item>
-    <ion-label>Your name:</ion-label>
-    <!-- configuring input -> floating, fixed, stacked-->
-    <ion-input position="floating"></ion-input>
-  </ion-item>
+  <h4>Grid - offset</h4>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        Content 1
+      </ion-col>
+      <ion-col size="3" offset="3">
+        Content 2
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <h4>Data input</h4>
-  <ion-item>
-    <ion-label>Your name:</ion-label>
-    <!-- data input -> value, placeholder, clearinput -->
-    <ion-input clearInput placeholder="Type your name"></ion-input>
-  </ion-item>
-  
-  <h4>Input types</h4>
-  <ion-item>
-    <ion-label>Text:</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
-    <ion-item>
-    <ion-label>Number:</ion-label>
-    <ion-input type="number"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label>Password:</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label>Tel:</ion-label>
-    <ion-input type="tel"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label>Url:</ion-label>
-    <ion-input type="url"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label>Search:</ion-label>
-    <ion-input type="search"></ion-input>
-  </ion-item>
+  <h4>Grid - text alignment</h4>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4" class="ion-text-start">1</ion-col>
+      <ion-col size="4" class="ion-text-center">2</ion-col>
+      <ion-col size="4" class="ion-text-end">3</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h4>Grid - vertical alignment</h4>
+  <ion-grid>
+    <ion-row class="ion-align-items-center">
+      <ion-col size="4">1</ion-col>
+      <ion-col size="4">2</ion-col>
+      <ion-col size="4">3<br>+<br>+</ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>
 
