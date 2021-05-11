@@ -380,3 +380,4 @@ Repository of classes and exercises.
 - [Components - Buttons]
 - [Components - Cards]
 - [Components - Lists]
+- [Components - Input]
