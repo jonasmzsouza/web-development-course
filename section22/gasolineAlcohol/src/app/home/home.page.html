@@ -1,0 +1,47 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="9">
+        <ion-img src="/assets/logo.png"></ion-img>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <h4 class="ion-text-center">
+          Find out which is the best option for filling your car.
+        </h4>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label position="stacked">
+            Alcohol Price. ex: $ 1.90
+          </ion-label>
+          <ion-input type="number" [(ngModel)]="alcoholPrice"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">
+            Gasoline Price. ex: $ 2.90
+          </ion-label>
+          <ion-input type="number" [(ngModel)]="gasolinePrice"></ion-input>
+        </ion-item>
+
+        <ion-button expand="full" (click)="calculate()">Calculate</ion-button>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <h5 class="ion-text-center">
+          {{ result }}
+        </h5>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>
