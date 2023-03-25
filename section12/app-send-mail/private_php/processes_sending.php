@@ -1,16 +1,15 @@
 <?php 
 
-    // "phpmailer/phpmailer": "^6.2"
-
-    require "./library/PHPMailer/Exception.php";
-    require "./library/PHPMailer/OAuth.php";
-    require "./library/PHPMailer/PHPMailer.php";
-    require "./library/PHPMailer/POP3.php";
-    require "./library/PHPMailer/SMTP.php";
+    // "phpmailer/phpmailer": "^6.8"
 
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
+
+    require "./library/PHPMailer/Exception.php";
+    require "./library/PHPMailer/PHPMailer.php";
+    require "./library/PHPMailer/POP3.php";
+    require "./library/PHPMailer/SMTP.php";
 
     class Message {
 
@@ -47,46 +46,90 @@
         header('Location: index.php');
     } 
 
-    $mail = new PHPMailer(true);
+    $mail = new PHPMailer();
 
-    try {
-        //Server settings
-        $mail->SMTPDebug = SMTP::DEBUG_OFF;                         //Enable verbose debug output
-        $mail->isSMTP();                                            //Send using SMTP
-        $mail->Host       = 'smtp.example.com';                     //Set the SMTP server to send through
-        $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'user@example.com';                     //SMTP username
-        $mail->Password   = 'secret';                               //SMTP password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-        $mail->Port       = 587;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    //Server settings
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    $mail->isSMTP();                                            //Send using SMTP
+    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+    $mail->Username   = 'user@example.com';                     //SMTP username
+    $mail->Password   = 'secret';                               //SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-        //Recipients
-        $mail->setFrom('from@example.com', 'Mailer');
-        $mail->addAddress($message->__get('to'));     //Add a recipient
-        //$mail->addAddress('ellen@example.com');               //Name is optional
-        //$mail->addReplyTo('info@example.com', 'Information');
-        //$mail->addCC('cc@example.com');
-        //$mail->addBCC('bcc@example.com');
+    //Recipients
+    $mail->setFrom('from@example.com', 'First Last');
+    $mail->addAddress($message->__get('to'));     //Add a recipient
+    //$mail->addAddress('ellen@example.com');               //Name is optional
+    //$mail->addReplyTo('info@example.com', 'Information');
+    //$mail->addCC('cc@example.com');
+    //$mail->addBCC('bcc@example.com');
 
-        //Attachments
-        //$mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-        //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
+    //Attachments
+    //$mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
+    //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
 
-        //Content
-        $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = $message->__get('subject');
-        $mail->Body    = $message->__get('message');
-        $mail->AltBody = 'It is necessary to use a client that supports HTML to have full access to the content of this message.';
+    //Content
+    $mail->isHTML(true);                                  //Set email format to HTML
+    $mail->Subject = $message->__get('subject');
+    $mail->Body    = $message->__get('message') . '<br><br> Message sent by IP: ' . get_user_ip();
+    $mail->AltBody = 'It is necessary to use a client that supports HTML to have full access to the content of this message.';
 
-        $mail->send();
-
+    if($mail->send()) {
         $message->status['status_code'] = 1;
         $message->status['status_description'] = 'Message sent successfully';
-
-    } catch (Exception $e) {
-
+        #Section 2: IMAP
+        if (save_mail($mail)) {
+            echo "Message saved!";
+        }
+    } else {
         $message->status['status_code'] = 2;
         $message->status['status_description'] = "This email could not be sent. Please try again later. Error details: {$mail->ErrorInfo}";
+    }
+
+    //Section 2: IMAP
+    //IMAP commands requires the PHP IMAP Extension, found at: https://php.net/manual/en/imap.setup.php
+    //Function to call which uses the PHP imap_*() functions to save messages: https://php.net/manual/en/book.imap.php
+    //You can use imap_getmailboxes($imapStream, '/imap/ssl', '*' ) to get a list of available folders or labels, this can
+    //be useful if you are trying to get this working on a non-Gmail IMAP server.
+    function save_mail($mail)
+    {
+        //You can change 'Sent Mail' to any other folder or tag
+        $path = '{imap.gmail.com:993/imap/ssl}[Gmail]/Sent Mail';
+
+        //Tell your server to open an IMAP connection using the same username and password as you used for SMTP
+        $imapStream = imap_open($path, $mail->Username, $mail->Password);
+
+        $result = imap_append($imapStream, $path, $mail->getSentMIMEMessage());
+        imap_close($imapStream);
+
+        return $result;
+    }
+
+    /**
+     * Function that returns the real IP of the client
+     * @return string $ip
+     */
+    function get_user_ip()
+    {
+        if (isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+            $_SERVER['REMOTE_ADDR'] = $_SERVER["HTTP_CF_CONNECTING_IP"];
+            $_SERVER['HTTP_CLIENT_IP'] = $_SERVER["HTTP_CF_CONNECTING_IP"];
+        }
+        $client  = @$_SERVER['HTTP_CLIENT_IP'];
+        $forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
+        $remote  = $_SERVER['REMOTE_ADDR'];
+
+        if (filter_var($client, FILTER_VALIDATE_IP)) {
+            $ip = $client;
+        } elseif (filter_var($forward, FILTER_VALIDATE_IP)) {
+            $ip = $forward;
+        } else {
+            $ip = $remote;
+        }
+
+        return $ip;
     }
 
 ?>
