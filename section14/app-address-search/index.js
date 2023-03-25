@@ -1,7 +1,7 @@
 function getAddressDataZipCode(zipCode) {
 
 
-    let url = 'https://viacep.com.br/ws/' + zipCode + '/json/unicode/';
+    let url = 'https://viacep.com.br/ws/' + zipCode + '/json/';
 
     let xmlHttp = new XMLHttpRequest()
     xmlHttp.open('GET', url)
