@@ -12,9 +12,7 @@
     //system users
     $users_list = array(
         array('id' => 1, 'email' => 'adm@test.com', 'password' => '1234', 'profile_id' => 1),
-        array('id' => 2, 'email' => 'user@test.com', 'password' => '1234', 'profile_id' => 1),
-        array('id' => 3, 'email' => 'john@test.com', 'password' => '1234', 'profile_id' => 2),
-        array('id' => 4, 'email' => 'mary@test.com', 'password' => '1234', 'profile_id' => 2)
+        array('id' => 2, 'email' => 'user@test.com', 'password' => '1234', 'profile_id' => 2),
     );
 
     foreach($users_list as $user) {
