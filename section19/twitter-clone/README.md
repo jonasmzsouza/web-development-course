@@ -1,6 +1,66 @@
-# Twitter Clone Project
-Twitter Clone project with PHP7 and MySQL using the MVC architecture.
+<p align="center"> 
+  <a href="https://twitter-clone.42web.io/" target="_blank">
+    <img src="https://img.shields.io/static/v1?label=:&message=website&color=05bdba&style=for-the-badge&logo=netlify&logo-color=white"/>
+  </a>
+  <img  src="https://raw.githubusercontent.com/jonasmzsouza/jonasmzsouza.github.io/main/assets/images/twitter-clone.jpg"  width="100%"  alt="screenshot twitter clone">
+</p>
+<hr>
 
+<p align="center">
+  <a href="#-about-the-project">About</a> |
+  <a href="#-technologies">Technologies</a> | 
+  <a href="#-how-to">How to</a> | 
+  <a href="#-author">Author</a> 
+</p>
+
+## 💻 About the project
+
+This project was developed in the Web Development Course at [Udemy](https://udemy.com/).
+A twitter clone web application with MVC architecture pattern, created for study purposes only.
+
+---
+
+## 🛠 Technologies
+
+Technologies and tools that were used in the development of the project:
+
+### **Languages | Environments | Frameworks | Libraries | Techniques**
+
+- HTML
+- CSS
+- Bootstrap
+- PHP
+- Composer
+- MySQL
+- PDO
+- MVC
+
+### **Utilities**
+
+- Editor: **[Visual Studio Code](https://code.visualstudio.com/)**
+- Emojis: **[Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet)**, **[Markdown Emoji](https://gist.github.com/rxaviers/7360908)**
+- Shields: **[Shields](https://shields.io/)**
+- Servers: **[XAMPP](https://www.apachefriends.org/)**
+- Deploy: **[InfinityFree](https://www.infinityfree.net/)**
+
+---
+
+## 🔧 How to
+
+1. download this folder with [download-directory](https://download-directory.github.io/) providing the full link.
+2. install the [XAMPP](https://www.apachefriends.org/) package on your computer or virtual machine.
+3. start the Apache and MySQL services from the XAMPP panel or command line.
+4. provision the `db_twitter_clone` database, and run the queries available in `query.sql` from the phpMyAdmin panel.
+5. provides the database information in the `App/Connection.php` file.
+6. put the files from the `public` folder into the `htdocs` directory of the installed package.
+7. create a folder outside the htdocs folder (like a sister folder). e.g. `twitter_private`.
+8. place the folders/files `App`, `vendor`, `composer.json`, `composer.lock`, `composer.phar` inside the created folder.
+9. add the path to the directory created in the files: `public/index.php`, `vendor/MF/Controller/Action.php`.
+10. navigate to `http://localhost`.
+
+---
+
+## 📖 Learning
 - Configuration of pages
 - Registration and authentication of users
 - MD5 encryption for passwords
@@ -9,3 +69,22 @@ Twitter Clone project with PHP7 and MySQL using the MVC architecture.
 - Following and failing to follow
 - Displaying profile indicators
 - Record pagination
+
+---
+
+## 👨‍💻 Author
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://jonasmzsouza.github.io/">
+         <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/61324433?v=4" width="100px;" alt=""/>
+         <br />
+         <sub><b>Jonas Souza</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
+ 
+[![Github Badge](https://img.shields.io/badge/-jonasmzsouza-3e4957?style=flat-square&logo=Github&logoColor=white&link=https://github.com/jonasmzsouza)](https://github.com/jonasmzsouza) [![Linkedin Badge](https://img.shields.io/badge/-jonasmzsouza-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jonasmzsouza/)](https://www.linkedin.com/in/jonasmzsouza/)
+
