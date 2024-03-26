@@ -67,7 +67,13 @@ function accomplished(id_task) {
 function getCurrentPage() {
 
     let url = window.location.href;
-    let page = url.substring(url.lastIndexOf('/') + 1, url.lastIndexOf('.'));
+    let page;
+
+    if(url.lastIndexOf('/') + 1 === window.location.href.length){
+        page = 'index';
+    } else {
+        page = url.substring(url.lastIndexOf('/') + 1, url.lastIndexOf('.'));
+    }
 
     return page;
 
